@@ -1,10 +1,11 @@
 import { Component, signal } from '@angular/core';
 import { PageHeaderComponent } from '../../components/shared/page-header.component';
+import {RouterLink} from '@angular/router';
 
 @Component({
   selector: 'app-about',
   standalone: true,
-  imports: [PageHeaderComponent],
+  imports: [PageHeaderComponent, RouterLink],
   template: `
     <div>
       <app-page-header
