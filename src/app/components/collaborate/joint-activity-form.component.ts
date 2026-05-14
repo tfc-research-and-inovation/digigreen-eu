@@ -1,5 +1,6 @@
-import { Component, signal } from '@angular/core';
+import { Component, signal, inject } from '@angular/core';
 import { ReactiveFormsModule, FormBuilder, Validators } from '@angular/forms';
+import { EmailService } from '../../services/email.service';
 
 @Component({
   selector: 'app-joint-activity-form',
@@ -64,17 +65,24 @@ import { ReactiveFormsModule, FormBuilder, Validators } from '@angular/forms';
         @if (showErrors()) {
           <p class="text-sm text-red-600">Please fill in all required fields and give consent.</p>
         }
-        <button type="submit"
-          class="bg-[#C67B5C] hover:bg-[#A5614A] text-white px-6 py-2.5 rounded-lg text-sm font-medium transition-colors">
-          Submit Proposal
+        @if (submitError()) {
+          <p class="text-sm text-red-600">Something went wrong. Please try again later.</p>
+        }
+        <button type="submit" [disabled]="sending()"
+          class="bg-[#C67B5C] hover:bg-[#A5614A] disabled:opacity-60 disabled:cursor-not-allowed text-white px-6 py-2.5 rounded-lg text-sm font-medium transition-colors">
+          {{ sending() ? 'Sending…' : 'Submit Proposal' }}
         </button>
       </form>
     }
   `,
 })
 export class JointActivityFormComponent {
+  private emailService = inject(EmailService);
+
   submitted = signal(false);
   showErrors = signal(false);
+  sending = signal(false);
+  submitError = signal(false);
 
   form = new FormBuilder().group({
     project_name: ['', Validators.required],
@@ -96,7 +104,20 @@ export class JointActivityFormComponent {
       this.form.markAllAsTouched();
       return;
     }
-    this.submitted.set(true);
+
+    const v = this.form.getRawValue();
+    this.sending.set(true);
+    this.submitError.set(false);
+
+    this.emailService.sendJointActivityProposal({
+      project_name: v.project_name ?? '',
+      contact_person: v.contact_person ?? '',
+      email: v.email ?? '',
+      activity_idea: v.activity_idea ?? '',
+      timeline: v.timeline ?? '',
+    }).subscribe({
+      next: () => { this.sending.set(false); this.submitted.set(true); },
+      error: () => { this.sending.set(false); this.submitError.set(true); },
+    });
   }
 }
-

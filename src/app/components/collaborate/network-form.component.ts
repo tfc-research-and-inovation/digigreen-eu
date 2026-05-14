@@ -1,5 +1,6 @@
-import { Component, signal } from '@angular/core';
+import { Component, signal, inject } from '@angular/core';
 import { ReactiveFormsModule, FormBuilder, Validators } from '@angular/forms';
+import { EmailService } from '../../services/email.service';
 
 const INTEREST_OPTIONS = [
   'Just Transition', 'Digital Inclusion', 'Green Skills', 'Social Innovation',
@@ -78,17 +79,24 @@ const INTEREST_OPTIONS = [
         @if (showErrors()) {
           <p class="text-sm text-red-600">Please fill in all required fields and give consent.</p>
         }
-        <button type="submit"
-          class="bg-[#7C9082] hover:bg-[#5A6B5E] text-white px-6 py-2.5 rounded-lg text-sm font-medium transition-colors">
-          Join the Network
+        @if (submitError()) {
+          <p class="text-sm text-red-600">Something went wrong. Please try again later.</p>
+        }
+        <button type="submit" [disabled]="sending()"
+          class="bg-[#7C9082] hover:bg-[#5A6B5E] disabled:opacity-60 disabled:cursor-not-allowed text-white px-6 py-2.5 rounded-lg text-sm font-medium transition-colors">
+          {{ sending() ? 'Sending…' : 'Join the Network' }}
         </button>
       </form>
     }
   `,
 })
 export class NetworkFormComponent {
+  private emailService = inject(EmailService);
+
   submitted = signal(false);
   showErrors = signal(false);
+  sending = signal(false);
+  submitError = signal(false);
   selectedInterests = signal<string[]>([]);
   readonly interestOptions = INTEREST_OPTIONS;
 
@@ -121,7 +129,20 @@ export class NetworkFormComponent {
       this.form.markAllAsTouched();
       return;
     }
-    this.submitted.set(true);
+
+    const v = this.form.getRawValue();
+    this.sending.set(true);
+    this.submitError.set(false);
+
+    this.emailService.sendNetworkApplication({
+      name: v.name ?? '',
+      organisation: v.organisation ?? '',
+      role: v.role ?? '',
+      email: v.email ?? '',
+      interests: this.selectedInterests().join(', ') || 'None selected',
+    }).subscribe({
+      next: () => { this.sending.set(false); this.submitted.set(true); },
+      error: () => { this.sending.set(false); this.submitError.set(true); },
+    });
   }
 }
-
