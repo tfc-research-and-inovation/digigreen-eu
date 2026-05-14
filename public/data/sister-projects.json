@@ -123,7 +123,8 @@
     "updated_date": "2026-04-13T12:56:58.505000",
     "created_by_id": "69731a42dc432a55387cec8e",
     "created_by": "muhammadmurtuzahussain@gmail.com",
-    "is_sample": false
+    "is_sample": false,
+    "featured_only": true
   },
   {
     "name": "ST4TE",

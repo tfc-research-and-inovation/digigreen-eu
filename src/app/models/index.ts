@@ -47,6 +47,7 @@ export interface SisterProject {
   contact_email?: string;
   is_featured: boolean;
   order: number;
+  featured_only?: boolean;
 }
 
 export interface Resource {

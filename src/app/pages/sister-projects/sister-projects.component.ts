@@ -70,7 +70,7 @@ export class SisterProjectsComponent implements OnInit {
   featured = () => this.projects().filter(p => p.is_featured);
   filteredProjects = () => {
     const s = this.filterStatus();
-    return this.projects().filter(p => s === 'All' || p.status === s);
+    return this.projects().filter(p => (s === 'All' || p.status === s) && !p.featured_only);
   };
   ngOnInit() {
     this.service.getAll().subscribe(data => { this.projects.set(data); this.loading.set(false); });

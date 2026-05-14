@@ -53,11 +53,11 @@ import { EventsTeaserComponent } from '../../components/home/events-teaser.compo
       </section>
 
       <!-- Stats -->
-      <section class="bg-[#F5F3EF] py-8">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <app-stats-strip />
-        </div>
-      </section>
+<!--      <section class="bg-[#F5F3EF] py-8">-->
+<!--        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">-->
+<!--          <app-stats-strip />-->
+<!--        </div>-->
+<!--      </section>-->
 
       <!-- Teasers -->
       <section class="py-16 md:py-24">
