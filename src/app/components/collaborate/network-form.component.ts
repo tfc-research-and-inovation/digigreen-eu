@@ -128,6 +128,7 @@ export class NetworkFormComponent {
       this.showErrors.set(true);
       this.form.markAllAsTouched();
       return;
+
     }
 
     const v = this.form.getRawValue();
