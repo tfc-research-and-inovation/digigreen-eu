@@ -22,7 +22,7 @@ interface NavItem {
 })
 export class LayoutComponent implements OnInit {
   mobileMenuOpen = signal(false);
-  cookieConsent = signal(true);
+  cookieConsent = signal(false);
   openDropdown = signal<string | null>(null);
 
   readonly navItems: NavItem[] = [
