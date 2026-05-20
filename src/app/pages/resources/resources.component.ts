@@ -7,7 +7,8 @@ import { PageHeaderComponent } from '../../components/shared/page-header.compone
 import { LoadingStateComponent } from '../../components/shared/loading-state.component';
 import { EmptyStateComponent } from '../../components/shared/empty-state.component';
 
-const RESOURCE_TYPES = ['Deliverable', 'Publication', 'Better Practice Guide', 'Policy Brief', 'Data & DMP'];
+// const RESOURCE_TYPES = ['Deliverable', 'Publication', 'Better Practice Guide', 'Policy Brief', 'Data & DMP'];
+const RESOURCE_TYPES = ['Deliverable', 'Publication', 'Better Practice Guide', 'Policy Brief'];
 const TYPE_COLORS: Record<string, string> = {
   'Deliverable': 'bg-blue-100 text-blue-800',
   'Publication': 'bg-purple-100 text-purple-800',

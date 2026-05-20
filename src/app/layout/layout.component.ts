@@ -35,7 +35,7 @@ export class LayoutComponent implements OnInit {
         { name: 'Publications', route: '/Resources', params: '?type=Publication' },
         { name: 'Better Practice Guides', route: '/Resources', params: '?type=Better Practice Guide' },
         { name: 'Policy Briefs', route: '/Resources', params: '?type=Policy Brief' },
-        { name: 'Data & DMP', route: '/Resources', params: '?type=Data %26 DMP' },
+        // { name: 'Data & DMP', route: '/Resources', params: '?type=Data %26 DMP' },
       ],
     },
     { name: 'News', route: '/News' },
