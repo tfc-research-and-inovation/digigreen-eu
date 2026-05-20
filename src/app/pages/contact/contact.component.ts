@@ -7,7 +7,7 @@ import { PageHeaderComponent } from '../../components/shared/page-header.compone
   imports: [PageHeaderComponent],
   template: `
     <div>
-      <app-page-header title="Contact" subtitle="Get in touch with the Digi Green TT team." breadcrumb="Contact"/>
+      <app-page-header title="Contact" subtitle="Get in touch with the DigiGreenTT team." breadcrumb="Contact"/>
       <section class="py-16 md:py-24">
         <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
           <div class="grid md:grid-cols-2 gap-8">

@@ -14,7 +14,7 @@ import { EmptyStateComponent } from '../../components/shared/empty-state.compone
     <div>
       <app-page-header
         title="Consortium Members"
-        subtitle="Digi Green TT Horizon Europe Consortium – Grant Agreement No. 101132546"
+        subtitle="DigiGreenTT Horizon Europe Consortium – Grant Agreement No. 101132546"
         breadcrumb="Members"/>
 
       <section class="py-16 md:py-24 bg-white">

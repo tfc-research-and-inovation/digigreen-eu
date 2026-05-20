@@ -20,11 +20,11 @@ import {RouterLink} from '@angular/router';
             <div>
               <h2 class="text-2xl md:text-3xl font-semibold text-[#2D3436] mb-6">Our Mission</h2>
               <div class="space-y-4 text-[#5A6B5E] leading-relaxed">
-                <p>Digi Green TT is a cluster group focused on supporting Europe's twin transition—green and digital—
+                <p>DigiGreenTT is a cluster group focused on supporting Europe's twin transition—green and digital—
                   with an underlying philosophy to leave no one behind. Our work centres on identifying, understanding,
                   and mitigating the social inequalities that can arise from rapid technological and environmental change.</p>
                 <p>Initiated in the FITTER-EU Horizon Europe project (Grant Agreement No. 101132546) and delivered through
-                  TFC Research and Innovation Limited (Ireland), the Digi Green TT group brings together a series of European
+                  TFC Research and Innovation Limited (Ireland), the DigiGreenTT group brings together a series of European
                   projects in the Twin-Transition space with a collective aim to cross-fertilize and transcend individual
                   project experiences for the wider good of the communities served.</p>
                 <p>Through the Sister Project Engagement initiative, we connect with fellow Horizon Europe projects to
