@@ -7,11 +7,11 @@ import { from, Observable } from 'rxjs';
 // Service ID:          EmailJS Dashboard → Email Services
 // Template IDs:        EmailJS Dashboard → Email Templates
 // Public Key:          EmailJS Dashboard → Account → General → Public Key
-const EMAILJS_SERVICE_ID = 'YOUR_SERVICE_ID';
-const EMAILJS_PUBLIC_KEY = 'YOUR_PUBLIC_KEY';
+const EMAILJS_SERVICE_ID = 'service_q6xlj2i';
+const EMAILJS_PUBLIC_KEY = 'MIA6E8iuZjTOBjgNF';
 
-const TEMPLATE_NETWORK_APPLICATION = 'YOUR_NETWORK_TEMPLATE_ID';
-const TEMPLATE_JOINT_ACTIVITY = 'YOUR_JOINT_ACTIVITY_TEMPLATE_ID';
+const TEMPLATE_NETWORK_APPLICATION = 'template_tr4mhxd';
+const TEMPLATE_JOINT_ACTIVITY = 'template_eh1kfng';
 
 // ─── Payload Interfaces ───────────────────────────────────────────────────────
 
