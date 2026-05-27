@@ -12,7 +12,7 @@ import { NetworkFormComponent } from '../../components/collaborate/network-form.
     <div>
       <app-page-header
         title="Collaborate With Us"
-        subtitle="Join our sister project network or propose a joint activity to advance fair twin transitions across Europe."
+        subtitle="Join the DigiGreenTT Sister project network or propose a joint activity to advance fair twin transitions across Europe."
         breadcrumb="Collaborate"/>
       <section class="py-16 md:py-24">
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">

@@ -65,7 +65,7 @@ import { EventsTeaserComponent } from '../../components/home/events-teaser.compo
           <div class="grid md:grid-cols-3 gap-6 lg:gap-8">
             <app-teaser-card
               title="What is the Sister Project Engagement"
-              description="DigiGreenTT connects Horizon Europe projects working on fair, inclusive green and digital transitions to enable cross-learning, collaboration, and joint activities."
+              description="DigiGreenTT Group connects Horizon Europe projects working on fair, inclusive green and digital transitions to enable cross-learning, collaboration, and joint activities."
               linkText="Learn more"
               linkPage="SisterProjects"
             />
