@@ -41,10 +41,10 @@ import { PageHeaderComponent } from '../../components/shared/page-header.compone
             <div class="bg-white rounded-xl border border-[#E8E4DC] p-6">
               <h3 class="text-base font-semibold text-[#2D3436] mb-4">Follow Us</h3>
               <div class="flex gap-3">
-                <a href="https://twitter.com/digigreenntt" target="_blank" rel="noopener noreferrer"
-                   class="flex items-center gap-2 text-sm text-[#7C9082] hover:text-[#5A6B5E] transition-colors">
-                  Twitter
-                </a>
+<!--                <a href="https://twitter.com/digigreenntt" target="_blank" rel="noopener noreferrer"-->
+<!--                   class="flex items-center gap-2 text-sm text-[#7C9082] hover:text-[#5A6B5E] transition-colors">-->
+<!--                  Twitter-->
+<!--                </a>-->
                 <a href="https://linkedin.com/company/digi-green-tt" target="_blank" rel="noopener noreferrer"
                    class="flex items-center gap-2 text-sm text-[#7C9082] hover:text-[#5A6B5E] transition-colors">
                   LinkedIn
