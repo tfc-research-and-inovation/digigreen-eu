@@ -53,7 +53,7 @@ import { NetworkFormComponent } from '../../components/collaborate/network-form.
           @if (activeTab() === 'network') {
             <div class="bg-white rounded-xl border border-[#E8E4DC] p-6 md:p-8">
               <div class="mb-8">
-                <h2 class="text-xl font-semibold text-[#2D3436] mb-3">Join the Sister Project Network</h2>
+                <h2 class="text-xl font-semibold text-[#2D3436] mb-3">Join the Group Sister Project Network</h2>
                 <p class="text-[#5A6B5E]">Connect your Horizon Europe project with FITTER-EU and other projects working on fair, inclusive green and digital transitions.</p>
               </div>
               <app-network-form/>

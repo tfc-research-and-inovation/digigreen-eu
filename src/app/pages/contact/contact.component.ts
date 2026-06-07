@@ -34,8 +34,8 @@ import { PageHeaderComponent } from '../../components/shared/page-header.compone
               </a>
             </div>
             <div class="bg-white rounded-xl border border-[#E8E4DC] p-6">
-              <h3 class="text-base font-semibold text-[#2D3436] mb-2">Project Coordinator</h3>
-              <p class="text-sm text-[#5A6B5E]">TFC Research and Innovation Limited</p>
+              <h3 class="text-base font-semibold text-[#2D3436] mb-2">Group Coordinator</h3>
+              <p class="text-sm text-[#5A6B5E]"><a href="https://tfcengage.com" target="_blank">TFC Research and Innovation Limited</a></p>
               <p class="text-xs text-[#7C9082] mt-1">Ireland</p>
             </div>
             <div class="bg-white rounded-xl border border-[#E8E4DC] p-6">
