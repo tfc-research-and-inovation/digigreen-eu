@@ -1,11 +1,11 @@
-import { Component, OnInit, inject, signal, computed } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
-import { DatePipe } from '@angular/common';
-import { ResourcesService } from '../../services/resources.service';
-import { Resource } from '../../models';
-import { PageHeaderComponent } from '../../components/shared/page-header.component';
-import { LoadingStateComponent } from '../../components/shared/loading-state.component';
-import { EmptyStateComponent } from '../../components/shared/empty-state.component';
+import {Component, OnInit, inject, signal, computed} from '@angular/core';
+import {ActivatedRoute} from '@angular/router';
+import {DatePipe} from '@angular/common';
+import {ResourcesService} from '../../services/resources.service';
+import {Resource} from '../../models';
+import {PageHeaderComponent} from '../../components/shared/page-header.component';
+import {LoadingStateComponent} from '../../components/shared/loading-state.component';
+import {EmptyStateComponent} from '../../components/shared/empty-state.component';
 
 // const RESOURCE_TYPES = ['Deliverable', 'Publication', 'Better Practice Guide', 'Policy Brief', 'Data & DMP'];
 const RESOURCE_TYPES = ['Deliverable', 'Publication', 'Better Practice Guide', 'Policy Brief'];
@@ -27,23 +27,45 @@ const TYPE_COLORS: Record<string, string> = {
         title="Resources"
         subtitle="Access individual project deliverables, publications, policy briefs, and better practice guides."
         breadcrumb="Resources"/>
-      <section class="py-16 md:py-24">
+      <section class="py-16 md:py-20">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+          <!-- Page actions -->
+          <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 mb-8">
+            <div>
+              <h2 class="text-xl font-semibold text-[#2D3436]">Resources library</h2>
+              <p class="text-sm text-[#5A6B5E] mt-1">
+                Browse resources or submit a new PDF for review.
+              </p>
+            </div>
+            <a href="" target="_blank" rel="noopener noreferrer"
+              class="inline-flex items-center justify-center gap-2 px-4 py-2.5 bg-[#7C9082] hover:bg-[#6f8275] text-white rounded-lg text-sm font-medium transition-colors"
+            >
+              <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"/>
+              </svg>
+              Upload PDF
+            </a>
+          </div>
+
           <!-- Filter buttons -->
           <div class="flex gap-2 flex-wrap mb-8">
             <button (click)="selectedType.set('all')"
-              [class]="selectedType()==='all' ? 'bg-[#7C9082] text-white' : 'border border-[#E8E4DC] text-[#5A6B5E] hover:border-[#7C9082]'"
-              class="px-3 py-1.5 text-sm rounded-lg transition-colors">All Resources</button>
+                    [class]="selectedType()==='all' ? 'bg-[#7C9082] text-white' : 'border border-[#E8E4DC] text-[#5A6B5E] hover:border-[#7C9082]'"
+                    class="px-3 py-1.5 text-sm rounded-lg transition-colors">All Resources
+            </button>
             @for (type of resourceTypes; track type) {
               <button (click)="selectedType.set(type)"
-                [class]="selectedType()===type ? 'bg-[#7C9082] text-white' : 'border border-[#E8E4DC] text-[#5A6B5E] hover:border-[#7C9082]'"
-                class="px-3 py-1.5 text-sm rounded-lg transition-colors">{{ type }}</button>
+                      [class]="selectedType()===type ? 'bg-[#7C9082] text-white' : 'border border-[#E8E4DC] text-[#5A6B5E] hover:border-[#7C9082]'"
+                      class="px-3 py-1.5 text-sm rounded-lg transition-colors">{{ type }}
+              </button>
             }
           </div>
           @if (loading()) {
             <app-loading-state message="Loading resources…"/>
           } @else if (filtered().length === 0) {
-            <app-empty-state title="No resources available yet" message="Resources will be added as the project progresses."/>
+            <app-empty-state title="No resources available yet"
+                             message="Resources will be added as the project progresses."/>
           } @else {
             <div class="space-y-4">
               @for (r of filtered(); track r.id) {
@@ -52,7 +74,7 @@ const TYPE_COLORS: Record<string, string> = {
                     <div class="shrink-0 w-12 h-12 rounded-lg bg-[#7C9082]/10 flex items-center justify-center">
                       <svg class="h-6 w-6 text-[#7C9082]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
-                          d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
+                              d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
                       </svg>
                     </div>
                     <div class="flex-1 min-w-0">
@@ -61,10 +83,12 @@ const TYPE_COLORS: Record<string, string> = {
                           {{ r.resource_type }}
                         </span>
                         @if (r.deliverable_number) {
-                          <span class="px-2 py-0.5 text-xs border border-[#E8E4DC] rounded-full text-[#5A6B5E]">{{ r.deliverable_number }}</span>
+                          <span
+                            class="px-2 py-0.5 text-xs border border-[#E8E4DC] rounded-full text-[#5A6B5E]">{{ r.deliverable_number }}</span>
                         }
                         @if (r.work_package) {
-                          <span class="px-2 py-0.5 text-xs border border-[#E8E4DC] rounded-full text-[#5A6B5E]">{{ r.work_package }}</span>
+                          <span
+                            class="px-2 py-0.5 text-xs border border-[#E8E4DC] rounded-full text-[#5A6B5E]">{{ r.work_package }}</span>
                         }
                       </div>
                       <h3 class="text-lg font-semibold text-[#2D3436] mb-2">{{ r.title }}</h3>
@@ -72,8 +96,12 @@ const TYPE_COLORS: Record<string, string> = {
                         <p class="text-sm text-[#5A6B5E] mb-3 line-clamp-2">{{ r.description }}</p>
                       }
                       <div class="flex flex-wrap items-center gap-4 text-xs text-[#7C9082]">
-                        @if (r.publish_date) { <span>Published: {{ r.publish_date | date:'mediumDate' }}</span> }
-                        @if (r.authors) { <span>Authors: {{ r.authors }}</span> }
+                        @if (r.publish_date) {
+                          <span>Published: {{ r.publish_date | date:'mediumDate' }}</span>
+                        }
+                        @if (r.authors) {
+                          <span>Authors: {{ r.authors }}</span>
+                        }
                       </div>
                     </div>
                     @if (r.file_url) {
@@ -82,7 +110,7 @@ const TYPE_COLORS: Record<string, string> = {
                            class="inline-flex items-center gap-2 px-4 py-2 bg-[#F5F3EF] hover:bg-[#E8E4DC] text-[#5A6B5E] rounded-lg text-sm font-medium transition-colors">
                           <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                              d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
+                                  d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
                           </svg>
                           View
                         </a>
@@ -121,7 +149,10 @@ export class ResourcesComponent implements OnInit {
       const type = params['type'];
       if (type && RESOURCE_TYPES.includes(type)) this.selectedType.set(type);
     });
-    this.service.getAll().subscribe(data => { this.all.set(data); this.loading.set(false); });
+    this.service.getAll().subscribe(data => {
+      this.all.set(data);
+      this.loading.set(false);
+    });
   }
 }
 
