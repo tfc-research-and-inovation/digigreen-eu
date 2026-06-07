@@ -31,7 +31,7 @@
                   </svg>
                 </button>
                 @if (openDropdown() === item.name) {
-                  <div class="absolute left-0 top-full mt-1 w-56 bg-white rounded-md shadow-lg border border-[#E8E4DC] py-1 z-50">
+                  <div class="absolute left-0 top-full w-56 bg-white rounded-md shadow-lg border border-[#E8E4DC] py-1 z-50">
                     @for (sub of item.dropdown; track sub.name) {
                       <a [routerLink]="sub.route" [queryParams]="sub.params ? parseParams(sub.params) : null"
                          (click)="closeDropdown()"
