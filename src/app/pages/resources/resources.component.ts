@@ -38,7 +38,7 @@ const TYPE_COLORS: Record<string, string> = {
                 Browse resources or submit a new PDF for review.
               </p>
             </div>
-            <a href="" target="_blank" rel="noopener noreferrer"
+            <a href="https://forms.gle/4FhDBdpRWj5YYUgTA" target="_blank" rel="noopener noreferrer"
               class="inline-flex items-center justify-center gap-2 px-4 py-2.5 bg-[#7C9082] hover:bg-[#6f8275] text-white rounded-lg text-sm font-medium transition-colors"
             >
               <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
