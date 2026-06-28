@@ -6,7 +6,6 @@
     "start": "ng serve",
     "build": "ng build",
     "build:ssr": "ng build",
-    "serve:ssr": "node dist/ng-fitter-eu-project/server/server.mjs",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },
