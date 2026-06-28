@@ -26,23 +26,23 @@ export class LayoutComponent implements OnInit {
   openDropdown = signal<string | null>(null);
 
   readonly navItems: NavItem[] = [
-    { name: 'Home', route: '/Home' },
-    { name: 'About', route: '/About' },
+    { name: 'Home', route: '/' },
+    { name: 'About', route: '/about' },
     {
       name: 'Resources',
       dropdown: [
-        { name: 'Deliverables', route: '/Resources', params: '?type=Deliverable' },
-        { name: 'Publications', route: '/Resources', params: '?type=Publication' },
-        { name: 'Better Practice Guides', route: '/Resources', params: '?type=Better Practice Guide' },
-        { name: 'Policy Briefs', route: '/Resources', params: '?type=Policy Brief' },
+        { name: 'Deliverables', route: '/resources', params: '?type=Deliverable' },
+        { name: 'Publications', route: '/resources', params: '?type=Publication' },
+        { name: 'Better Practice Guides', route: '/resources', params: '?type=Better Practice Guide' },
+        { name: 'Policy Briefs', route: '/resources', params: '?type=Policy Brief' },
         // { name: 'Data & DMP', route: '/Resources', params: '?type=Data %26 DMP' },
       ],
     },
-    { name: 'News', route: '/News' },
-    { name: 'Archive', route: '/Archive' },
-    { name: 'Sister Projects', route: '/SisterProjects' },
-    { name: 'Collaborate', route: '/Collaborate' },
-    { name: 'Contact', route: '/Contact' },
+    { name: 'News', route: '/news' },
+    { name: 'Archive', route: '/archive' },
+    { name: 'Sister Projects', route: '/sisterProjects' },
+    { name: 'Collaborate', route: '/collaborate' },
+    { name: 'Contact', route: '/contact' },
   ];
 
   ngOnInit() {
