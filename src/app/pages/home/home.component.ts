@@ -4,7 +4,6 @@ import { NewsService } from '../../services/news.service';
 import { EventsService } from '../../services/events.service';
 import { NewsItem, Event } from '../../models';
 import { HeroSliderComponent } from '../../components/home/hero-slider.component';
-import { StatsStripComponent } from '../../components/home/stats-strip.component';
 import { TeaserCardComponent } from '../../components/home/teaser-card.component';
 import { NewsTeaserComponent } from '../../components/home/news-teaser.component';
 import { EventsTeaserComponent } from '../../components/home/events-teaser.component';
@@ -14,7 +13,7 @@ import { EventsTeaserComponent } from '../../components/home/events-teaser.compo
   standalone: true,
   imports: [
     RouterLink,
-    HeroSliderComponent, StatsStripComponent,
+    HeroSliderComponent,
     TeaserCardComponent, NewsTeaserComponent, EventsTeaserComponent,
   ],
   template: `
