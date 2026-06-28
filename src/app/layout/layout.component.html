@@ -11,7 +11,7 @@
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex justify-between items-center h-16 md:h-20">
         <!-- Logo -->
-        <a routerLink="/Home" class="flex items-center gap-3">
+        <a routerLink="/" class="flex items-center gap-3">
           <span class="text-xl md:text-2xl font-semibold text-[#2D3436] tracking-tight">DigiGreenTT</span>
           <span class="hidden sm:inline ml-2 text-xs text-[#7C9082] font-medium uppercase tracking-wider">Twin Transition</span>
         </a>
@@ -136,7 +136,7 @@
           <ul class="mt-4 space-y-3">
             @for (item of ['About','SisterProjects','News','Collaborate']; track item) {
               <li>
-                <a [routerLink]="'/'+item" class="text-sm text-gray-400 hover:text-white transition-colors">
+                <a [routerLink]="'/'+item.toLowerCase()" class="text-sm text-gray-400 hover:text-white transition-colors">
                   {{ item === 'SisterProjects' ? 'Sister Projects' : item }}
                 </a>
               </li>
@@ -150,7 +150,7 @@
           <ul class="mt-4 space-y-3">
             @for (item of resourceFooterLinks; track item.label) {
               <li>
-                <a routerLink="/Resources" [queryParams]="{type: item.type}"
+                <a routerLink="/resources" [queryParams]="{type: item.type}"
                    class="text-sm text-gray-400 hover:text-white transition-colors">
                   {{ item.label }}
                 </a>
@@ -207,8 +207,8 @@
       <div class="mt-8 pt-8 border-t border-white/10 flex flex-col sm:flex-row justify-between items-center gap-4">
         <p class="text-xs text-gray-500">&copy; {{ currentYear }} TFC Research and Innovation Limited. All rights reserved.</p>
         <div class="flex gap-6">
-          <a routerLink="/Privacy" class="text-xs text-gray-500 hover:text-gray-300 transition-colors">Privacy &amp; Cookies</a>
-          <a routerLink="/Terms" class="text-xs text-gray-500 hover:text-gray-300 transition-colors">Terms &amp; Conditions</a>
+          <a routerLink="/privacy" class="text-xs text-gray-500 hover:text-gray-300 transition-colors">Privacy &amp; Cookies</a>
+          <a routerLink="/terms" class="text-xs text-gray-500 hover:text-gray-300 transition-colors">Terms &amp; Conditions</a>
         </div>
       </div>
     </div>

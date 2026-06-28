@@ -1,25 +1,24 @@
 import { Routes } from '@angular/router';
 
 export const routes: Routes = [
-  { path: '', redirectTo: 'Home', pathMatch: 'full' },
   {
-    path: 'Home',
+    path: '',
     loadComponent: () => import('./pages/home/home.component').then(m => m.HomeComponent),
   },
   {
-    path: 'About',
+    path: 'about',
     loadComponent: () => import('./pages/about/about.component').then(m => m.AboutComponent),
   },
   {
-    path: 'Members',
+    path: 'members',
     loadComponent: () => import('./pages/members/members.component').then(m => m.MembersComponent),
   },
   {
-    path: 'SisterProjects',
+    path: 'sisterProjects',
     loadComponent: () => import('./pages/sister-projects/sister-projects.component').then(m => m.SisterProjectsComponent),
   },
   {
-    path: 'News',
+    path: 'news',
     loadComponent: () => import('./pages/news/news.component').then(m => m.NewsComponent),
   },
   {
@@ -27,27 +26,27 @@ export const routes: Routes = [
     loadComponent: () => import('./pages/news-detail/news-detail.component').then(m => m.NewsDetailComponent),
   },
   {
-    path: 'Archive',
+    path: 'archive',
     loadComponent: () => import('./pages/archive/archive.component').then(m => m.ArchiveComponent),
   },
   {
-    path: 'Resources',
+    path: 'resources',
     loadComponent: () => import('./pages/resources/resources.component').then(m => m.ResourcesComponent),
   },
   {
-    path: 'Collaborate',
+    path: 'collaborate',
     loadComponent: () => import('./pages/collaborate/collaborate.component').then(m => m.CollaborateComponent),
   },
   {
-    path: 'Contact',
+    path: 'contact',
     loadComponent: () => import('./pages/contact/contact.component').then(m => m.ContactComponent),
   },
   {
-    path: 'Privacy',
+    path: 'privacy',
     loadComponent: () => import('./pages/privacy/privacy.component').then(m => m.PrivacyComponent),
   },
   {
-    path: 'Terms',
+    path: 'terms',
     loadComponent: () => import('./pages/terms/terms.component').then(m => m.TermsComponent),
   },
   {
