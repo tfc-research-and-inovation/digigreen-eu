@@ -40,7 +40,7 @@ import { EventsTeaserComponent } from '../../components/home/events-teaser.compo
                 </a>
                 <a routerLink="/collaborate" [queryParams]="{tab:'network'}"
                    class="inline-flex items-center justify-center gap-2 border border-[#7C9082] text-[#7C9082] hover:bg-[#7C9082]/10 px-6 py-3 rounded-lg text-base font-medium transition-colors">
-                  Join the Sister Project Network
+                  Join the DigigreenTT Project Network
                 </a>
               </div>
             </div>

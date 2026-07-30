@@ -14,15 +14,15 @@ import { RouterLink } from '@angular/router';
   template: `
     <div>
       <app-page-header
-        title="Sister Projects"
+        title="DigigreenTT Projects"
         subtitle="Horizon Europe projects working alongside FITTER-EU on fair, inclusive green and digital transitions."
-        breadcrumb="Sister Projects"/>
+        breadcrumb="DigigreenTT Projects"/>
       <section class="py-16 md:py-24">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           @if (loading()) {
-            <app-loading-state message="Loading sister projects…"/>
+            <app-loading-state message="Loading DigigreenTT projects…"/>
           } @else if (projects().length === 0) {
-            <app-empty-state title="No sister projects yet" message="Sister project information will be added soon."/>
+            <app-empty-state title="No DigigreenTT projects yet" message="DigigreenTT project information will be added soon."/>
           } @else {
             @if (featured().length > 0) {
               <div class="mb-12">
@@ -33,7 +33,7 @@ import { RouterLink } from '@angular/router';
               </div>
             }
             <div>
-              <h2 class="text-base font-semibold text-[#2D3436] uppercase tracking-wider mb-6 pb-3 border-b-2 border-[#E8E4DC]">All Sister Projects</h2>
+              <h2 class="text-base font-semibold text-[#2D3436] uppercase tracking-wider mb-6 pb-3 border-b-2 border-[#E8E4DC]">All DigigreenTT Projects</h2>
               <div class="flex gap-2 mb-6 flex-wrap">
                 @for (s of statuses; track s) {
                   <button (click)="filterStatus.set(s)"

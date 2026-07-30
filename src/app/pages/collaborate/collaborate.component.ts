@@ -12,7 +12,7 @@ import { NetworkFormComponent } from '../../components/collaborate/network-form.
     <div>
       <app-page-header
         title="Collaborate With Us"
-        subtitle="Join the DigiGreenTT Sister project network or propose a joint activity to advance fair twin transitions across Europe."
+        subtitle="Join the DigiGreenTT project network or propose a joint activity to advance fair twin transitions across Europe."
         breadcrumb="Collaborate"/>
       <section class="py-16 md:py-24">
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -44,7 +44,7 @@ import { NetworkFormComponent } from '../../components/collaborate/network-form.
             <div class="bg-white rounded-xl border border-[#E8E4DC] p-6 md:p-8">
               <div class="mb-8">
                 <h2 class="text-xl font-semibold text-[#2D3436] mb-3">Propose a Joint Activity</h2>
-                <p class="text-[#5A6B5E]">Have an idea for a joint workshop, publication, or event? Share your proposal and we'll explore how FITTER-EU and our sister projects can collaborate.</p>
+                <p class="text-[#5A6B5E]">Have an idea for a joint workshop, publication, or event? Share your proposal and we'll explore how FITTER-EU and our DigigreenTT projects can collaborate.</p>
               </div>
               <app-joint-activity-form/>
             </div>

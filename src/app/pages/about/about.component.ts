@@ -27,7 +27,7 @@ import {RouterLink} from '@angular/router';
                   TFC Research and Innovation Limited (Ireland), the DigiGreenTT group brings together a series of European
                   projects in the Twin-Transition space with a collective aim to cross-fertilize and transcend individual
                   project experiences for the wider good of the communities served.</p>
-                <p>Through the Sister Project Engagement initiative, we connect with fellow Horizon Europe projects to
+                <p>Through the DigigreenTT Project Engagement initiative, we connect with fellow Horizon Europe projects to
                   amplify impact, share knowledge, and collaborate on joint activities that advance fairness and inclusion
                   across the European Research Area.</p>
               </div>
