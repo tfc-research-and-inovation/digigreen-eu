@@ -24,13 +24,13 @@ import { PageHeaderComponent } from '../../components/shared/page-header.compone
             </div>
             <div class="bg-white rounded-xl border border-[#E8E4DC] p-6">
               <h3 class="text-base font-semibold text-[#2D3436] mb-4">Project Website</h3>
-              <a href="https://digigreenntt.eu" target="_blank" rel="noopener noreferrer"
+              <a href="https://digigreentt.eu" target="_blank" rel="noopener noreferrer"
                  class="flex items-center gap-2 text-sm text-[#7C9082] hover:text-[#5A6B5E] transition-colors">
                 <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                     d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
                 </svg>
-                digigreenntt.eu
+                digigreentt.eu
               </a>
             </div>
             <div class="bg-white rounded-xl border border-[#E8E4DC] p-6">
