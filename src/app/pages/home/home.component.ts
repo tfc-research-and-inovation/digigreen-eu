@@ -31,14 +31,14 @@ import { EventsTeaserComponent } from '../../components/home/events-teaser.compo
                 Advancing social justice to reduce inequality in Europe's green and digital transitions.
               </p>
               <div class="mt-8 flex flex-col sm:flex-row gap-4">
-                <a routerLink="/Collaborate"
+                <a routerLink="/collaborate"
                    class="inline-flex items-center justify-center gap-2 bg-[#C67B5C] hover:bg-[#A5614A] text-white px-6 py-3 rounded-lg text-base font-medium transition-colors">
                   Propose a Joint Activity
                   <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
                   </svg>
                 </a>
-                <a routerLink="/Collaborate" [queryParams]="{tab:'network'}"
+                <a routerLink="/collaborate" [queryParams]="{tab:'network'}"
                    class="inline-flex items-center justify-center gap-2 border border-[#7C9082] text-[#7C9082] hover:bg-[#7C9082]/10 px-6 py-3 rounded-lg text-base font-medium transition-colors">
                   Join the Sister Project Network
                 </a>
@@ -63,10 +63,10 @@ import { EventsTeaserComponent } from '../../components/home/events-teaser.compo
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div class="grid md:grid-cols-3 gap-6 lg:gap-8">
             <app-teaser-card
-              title="What is the Sister Project Engagement"
+              title="What is the DigigreenTT Project Engagement"
               description="DigiGreenTT Group connects Horizon Europe projects working on fair, inclusive green and digital transitions to enable cross-learning, collaboration, and joint activities."
               linkText="Learn more"
-              linkPage="SisterProjects"
+              linkPage="digigreentt-projects"
             />
             <app-events-teaser [events]="events()" />
             <app-news-teaser [news]="news()" />
@@ -82,16 +82,16 @@ import { EventsTeaserComponent } from '../../components/home/events-teaser.compo
             Join our network of Horizon Europe projects and contribute to a fair digital and green twin transition for all Europeans.
           </p>
           <div class="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
-            <a routerLink="/Collaborate"
+            <a routerLink="/collaborate"
                class="inline-flex items-center justify-center gap-2 bg-[#C67B5C] hover:bg-[#A5614A] text-white px-8 py-3 rounded-lg text-base font-medium transition-colors">
               Get Involved
               <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
               </svg>
             </a>
-            <a routerLink="/SisterProjects"
+            <a routerLink="/digigreentt-projects"
                class="inline-flex items-center justify-center border border-white/30 text-white hover:bg-white/10 px-8 py-3 rounded-lg text-base font-medium transition-colors">
-              View Sister Projects
+              View DigiGreenTT Projects
             </a>
           </div>
         </div>

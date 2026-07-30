@@ -23,7 +23,7 @@ import { NewsItem } from '../../models';
         <p class="text-sm text-[#5A6B5E] line-clamp-3 flex-1">{{ item.excerpt }}</p>
         <div class="mt-4 flex items-center justify-between">
           <span class="text-xs text-[#7C9082]">{{ item.publish_date | date:'mediumDate' }}</span>
-          <a [routerLink]="'/NewsDetail'" [queryParams]="{id: item.id}"
+          <a [routerLink]="'/news-detail'" [queryParams]="{id: item.id}"
              class="text-sm font-medium text-[#7C9082] hover:text-[#5A6B5E] transition-colors">
             Read more →
           </a>

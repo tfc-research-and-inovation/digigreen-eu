@@ -29,7 +29,7 @@ import { EmptyStateComponent } from '../../components/shared/empty-state.compone
                     <h3 class="text-base font-semibold text-[#2D3436]">{{ item.title }}</h3>
                     <p class="text-sm text-[#5A6B5E] mt-1 line-clamp-2">{{ item.excerpt }}</p>
                   </div>
-                  <a [routerLink]="'/NewsDetail'" [queryParams]="{id: item.id}"
+                  <a [routerLink]="'/news-detail'" [queryParams]="{id: item.id}"
                      class="shrink-0 text-sm font-medium text-[#7C9082] hover:text-[#5A6B5E] transition-colors">
                     Read more →
                   </a>

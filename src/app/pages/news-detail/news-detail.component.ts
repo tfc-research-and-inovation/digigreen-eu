@@ -16,12 +16,12 @@ import { format, parseISO } from 'date-fns';
       } @else if (!item()) {
         <div class="max-w-3xl mx-auto px-4 py-24 text-center">
           <h2 class="text-2xl font-semibold text-[#2D3436] mb-4">Article not found</h2>
-          <a routerLink="/News" class="text-[#7C9082] hover:underline">← Back to News</a>
+          <a routerLink="/news" class="text-[#7C9082] hover:underline">← Back to News</a>
         </div>
       } @else {
         <section class="bg-[#2D3436] text-white py-12 md:py-16">
           <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-            <a routerLink="/News" class="text-sm text-[#7C9082] hover:text-white transition-colors mb-4 inline-block">← Back to News</a>
+            <a routerLink="/news" class="text-sm text-[#7C9082] hover:text-white transition-colors mb-4 inline-block">← Back to News</a>
             <div class="flex flex-wrap gap-2 mb-4">
               @for (tag of (item()!.tags ?? []); track tag) {
                 <span class="px-2 py-0.5 text-xs bg-[#7C9082]/20 text-[#7C9082] rounded-full">{{ tag }}</span>

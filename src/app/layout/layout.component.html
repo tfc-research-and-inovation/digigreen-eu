@@ -136,10 +136,10 @@
         <div>
           <h3 class="text-sm font-semibold uppercase tracking-wider text-gray-300">Quick Links</h3>
           <ul class="mt-4 space-y-3">
-            @for (item of ['About','SisterProjects','News','Collaborate']; track item) {
+            @for (item of quickLinks; track item) {
               <li>
-                <a [routerLink]="'/'+item.toLowerCase()" class="text-sm text-gray-400 hover:text-white transition-colors">
-                  {{ item === 'SisterProjects' ? 'Sister Projects' : item }}
+                <a [routerLink]="item.path" class="text-sm text-gray-400 hover:text-white transition-colors">
+                  {{ item.label }}
                 </a>
               </li>
             }
@@ -176,13 +176,13 @@
               </a>
             </li>
             <li>
-              <a href="https://digigreenntt.eu" target="_blank" rel="noopener noreferrer"
+              <a href="https://digigreentt.eu" target="_blank" rel="noopener noreferrer"
                  class="flex items-center gap-2 text-sm text-gray-400 hover:text-white transition-colors">
                 <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                     d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
                 </svg>
-                digigreenntt.eu
+                digigreentt.eu
               </a>
             </li>
           </ul>

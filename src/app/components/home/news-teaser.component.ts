@@ -17,7 +17,7 @@ import { DatePipe } from '@angular/common';
           @for (item of news; track item.id) {
             <li class="border-b border-[#E8E4DC] pb-4 last:border-0 last:pb-0">
               <p class="text-xs text-[#7C9082] mb-1">{{ item.publish_date | date:'mediumDate' }}</p>
-              <a [routerLink]="'/NewsDetail'" [queryParams]="{id: item.id}"
+              <a [routerLink]="'/news-detail'" [queryParams]="{id: item.id}"
                  class="text-sm font-medium text-[#2D3436] hover:text-[#7C9082] transition-colors line-clamp-2">
                 {{ item.title }}
               </a>

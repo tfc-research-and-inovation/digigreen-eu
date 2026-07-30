@@ -92,7 +92,7 @@ import {RouterLink} from '@angular/router';
                 </ul>
               </div>
               <div class="text-center lg:text-right">
-                <a routerLink="/Collaborate"
+                <a routerLink="/collaborate"
                    class="inline-flex items-center gap-2 bg-white text-[#7C9082] hover:bg-white/90 px-8 py-3 rounded-lg text-base font-medium transition-colors">
                   Collaborate With Us
                   <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">

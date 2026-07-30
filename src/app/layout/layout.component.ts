@@ -40,7 +40,7 @@ export class LayoutComponent implements OnInit {
     },
     { name: 'News', route: '/news' },
     { name: 'Archive', route: '/archive' },
-    { name: 'Sister Projects', route: '/sisterProjects' },
+    { name: 'DigigreenTT Projects', route: '/digigreentt-projects' },
     { name: 'Collaborate', route: '/collaborate' },
     { name: 'Contact', route: '/contact' },
   ];
@@ -78,6 +78,13 @@ export class LayoutComponent implements OnInit {
     { label: 'Publications', type: 'Publication' },
     { label: 'Policy Briefs', type: 'Policy Brief' },
     { label: 'Better Practice Guides', type: 'Better Practice Guide' },
+  ];
+
+  readonly quickLinks = [
+    { label: 'About', path: '/about' },
+    { label: 'DigigreenTT', path: '/digigreentt-projects' },
+    { label: 'News', path: '/news' },
+    { label: 'Collaborate', path: '/collaborate' }
   ];
 
   parseParams(params: string): Record<string, string> {
