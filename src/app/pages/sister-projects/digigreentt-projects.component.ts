@@ -8,7 +8,7 @@ import { EmptyStateComponent } from '../../components/shared/empty-state.compone
 import { RouterLink } from '@angular/router';
 
 @Component({
-  selector: 'app-sister-projects',
+  selector: 'app-digigreentt-projects',
   standalone: true,
   imports: [PageHeaderComponent, ProjectCardComponent, LoadingStateComponent, EmptyStateComponent, RouterLink],
   template: `
@@ -61,7 +61,7 @@ import { RouterLink } from '@angular/router';
     </div>
   `,
 })
-export class SisterProjectsComponent implements OnInit {
+export class DigigreenTTProjectsComponent implements OnInit {
   private service = inject(SisterProjectsService);
   projects = signal<SisterProject[]>([]);
   loading = signal(true);

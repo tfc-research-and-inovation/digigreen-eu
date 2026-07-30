@@ -15,7 +15,7 @@ export const routes: Routes = [
   },
   {
     path: 'digigreentt-projects',
-    loadComponent: () => import('./pages/sister-projects/sister-projects.component').then(m => m.DigigreenTTProjectsComponent),
+    loadComponent: () => import('./pages/sister-projects/digigreentt-projects.component').then(m => m.DigigreenTTProjectsComponent),
   },
   {
     path: 'news',
