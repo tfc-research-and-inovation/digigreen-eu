@@ -52,7 +52,7 @@ import { RouterLink } from '@angular/router';
         <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 class="text-2xl font-semibold text-[#2D3436] mb-4">Join the Network</h2>
           <p class="text-[#5A6B5E] mb-6">Is your Horizon Europe project working on twin transitions? Connect with us.</p>
-          <a routerLink="/Collaborate" [queryParams]="{tab:'network'}"
+          <a routerLink="/collaborate" [queryParams]="{tab:'network'}"
              class="inline-flex items-center gap-2 bg-[#7C9082] hover:bg-[#5A6B5E] text-white px-6 py-3 rounded-lg font-medium transition-colors">
             Apply to Join
           </a>

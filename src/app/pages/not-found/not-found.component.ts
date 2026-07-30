@@ -10,7 +10,7 @@ import { RouterLink } from '@angular/router';
       <p class="text-6xl font-semibold text-[#7C9082]">404</p>
       <h1 class="mt-4 text-2xl font-semibold text-[#2D3436]">Page not found</h1>
       <p class="mt-2 text-[#5A6B5E]">The page you're looking for doesn't exist.</p>
-      <a routerLink="/Home"
+      <a routerLink="/"
          class="mt-6 inline-flex items-center gap-2 bg-[#7C9082] hover:bg-[#5A6B5E] text-white px-6 py-2.5 rounded-lg text-sm font-medium transition-colors">
         Back to Home
       </a>
