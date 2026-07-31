@@ -35,22 +35,22 @@ import { PageHeaderComponent } from '../../components/shared/page-header.compone
             </div>
             <div class="bg-white rounded-xl border border-[#E8E4DC] p-6">
               <h3 class="text-base font-semibold text-[#2D3436] mb-2">Group Coordinator</h3>
-              <p class="text-sm text-[#5A6B5E]"><a href="https://tfcengage.com" target="_blank">TFC Research and Innovation Limited</a></p>
+              <p class="text-sm text-[#5A6B5E]"><a href="https://www.tfcengage.com" target="_blank">TFC Research and Innovation Limited</a></p>
               <p class="text-xs text-[#7C9082] mt-1">Ireland</p>
             </div>
-            <div class="bg-white rounded-xl border border-[#E8E4DC] p-6">
-              <h3 class="text-base font-semibold text-[#2D3436] mb-4">Follow Us</h3>
-              <div class="flex gap-3">
-<!--                <a href="https://twitter.com/digigreenntt" target="_blank" rel="noopener noreferrer"-->
+<!--            <div class="bg-white rounded-xl border border-[#E8E4DC] p-6">-->
+<!--              <h3 class="text-base font-semibold text-[#2D3436] mb-4">Follow Us</h3>-->
+<!--              <div class="flex gap-3">-->
+<!--&lt;!&ndash;                <a href="https://twitter.com/digigreenntt" target="_blank" rel="noopener noreferrer"&ndash;&gt;-->
+<!--&lt;!&ndash;                   class="flex items-center gap-2 text-sm text-[#7C9082] hover:text-[#5A6B5E] transition-colors">&ndash;&gt;-->
+<!--&lt;!&ndash;                  Twitter&ndash;&gt;-->
+<!--&lt;!&ndash;                </a>&ndash;&gt;-->
+<!--                <a href="https://linkedin.com/company/digi-green-tt" target="_blank" rel="noopener noreferrer"-->
 <!--                   class="flex items-center gap-2 text-sm text-[#7C9082] hover:text-[#5A6B5E] transition-colors">-->
-<!--                  Twitter-->
+<!--                  LinkedIn-->
 <!--                </a>-->
-                <a href="https://linkedin.com/company/digi-green-tt" target="_blank" rel="noopener noreferrer"
-                   class="flex items-center gap-2 text-sm text-[#7C9082] hover:text-[#5A6B5E] transition-colors">
-                  LinkedIn
-                </a>
-              </div>
-            </div>
+<!--              </div>-->
+<!--            </div>-->
           </div>
           <div class="mt-8 p-6 bg-[#F5F3EF] rounded-xl border border-[#E8E4DC]">
             <p class="text-xs text-gray-500 leading-relaxed">

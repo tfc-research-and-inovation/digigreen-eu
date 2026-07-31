@@ -17,7 +17,7 @@ export class EventsService {
       map(items => {
         const upcoming = items
           .filter(e => e.is_upcoming)
-          .sort((a, b) => new Date(a.event_date).getTime() - new Date(b.event_date).getTime());
+          .sort((a, b) => b.id - a.id);
         return count ? upcoming.slice(0, count) : upcoming;
       })
     );

@@ -1,5 +1,5 @@
 export interface Event {
-  id: string;
+  id: number;
   title: string;
   description?: string;
   event_date: string;
@@ -8,6 +8,7 @@ export interface Event {
   event_type?: 'Roundtable' | 'Workshop' | 'Hackathon' | 'Conference' | 'Webinar' | 'Other';
   registration_url?: string;
   is_upcoming: boolean;
+  url: string
 }
 
 export interface NewsItem {
