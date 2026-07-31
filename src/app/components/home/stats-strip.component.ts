@@ -4,7 +4,7 @@ const stats = [
   { value: '12', label: 'Partner Countries' },
   { value: '36', label: 'Project Months' },
   { value: '8', label: 'Work Packages' },
-  { value: '20+', label: 'DigigreenTT Projects' },
+  { value: '20+', label: 'DigiGreenTT Group Projects' },
 ];
 
 @Component({

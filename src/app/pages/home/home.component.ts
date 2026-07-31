@@ -40,7 +40,7 @@ import { EventsTeaserComponent } from '../../components/home/events-teaser.compo
                 </a>
                 <a routerLink="/collaborate" [queryParams]="{tab:'network'}"
                    class="inline-flex items-center justify-center gap-2 border border-[#7C9082] text-[#7C9082] hover:bg-[#7C9082]/10 px-6 py-3 rounded-lg text-base font-medium transition-colors">
-                  Join the DigigreenTT Project Network
+                  Join the DigiGreenTT Group Network
                 </a>
               </div>
             </div>
@@ -63,7 +63,7 @@ import { EventsTeaserComponent } from '../../components/home/events-teaser.compo
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div class="grid md:grid-cols-3 gap-6 lg:gap-8">
             <app-teaser-card
-              title="What is the DigigreenTT Project Engagement"
+              title="What is the DigiGreenTT Group Engagement"
               description="DigiGreenTT Group connects Horizon Europe projects working on fair, inclusive green and digital transitions to enable cross-learning, collaboration, and joint activities."
               linkText="Learn more"
               linkPage="digigreentt-projects"
@@ -91,7 +91,7 @@ import { EventsTeaserComponent } from '../../components/home/events-teaser.compo
             </a>
             <a routerLink="/digigreentt-projects"
                class="inline-flex items-center justify-center border border-white/30 text-white hover:bg-white/10 px-8 py-3 rounded-lg text-base font-medium transition-colors">
-              View DigiGreenTT Projects
+              View DigiGreenTT Group Projects
             </a>
           </div>
         </div>
