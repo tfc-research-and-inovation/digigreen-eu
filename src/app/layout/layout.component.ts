@@ -40,7 +40,7 @@ export class LayoutComponent implements OnInit {
     },
     { name: 'News', route: '/news' },
     { name: 'Archive', route: '/archive' },
-    { name: 'DigigreenTT Projects', route: '/digigreentt-projects' },
+    { name: 'DigiGreenTT Projects', route: '/digigreentt-projects' },
     { name: 'Collaborate', route: '/collaborate' },
     { name: 'Contact', route: '/contact' },
   ];
@@ -82,7 +82,7 @@ export class LayoutComponent implements OnInit {
 
   readonly quickLinks = [
     { label: 'About', path: '/about' },
-    { label: 'DigigreenTT', path: '/digigreentt-projects' },
+    { label: 'DigiGreenTT Group', path: '/digigreentt-projects' },
     { label: 'News', path: '/news' },
     { label: 'Collaborate', path: '/collaborate' }
   ];
