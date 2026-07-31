@@ -20,13 +20,13 @@ import { EmailService } from '../../services/email.service';
     } @else {
       <form [formGroup]="form" (ngSubmit)="onSubmit()" class="space-y-6">
         <div class="grid sm:grid-cols-2 gap-6">
-          <div>
-            <label class="block text-sm font-medium text-[#2D3436] mb-1">Project Name *</label>
-            <input formControlName="project_name" type="text"
-              class="w-full border border-[#E8E4DC] rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-[#7C9082]/50"
-              [class.border-red-400]="isInvalid('project_name')"
-              placeholder="Your project name"/>
-          </div>
+<!--          <div>-->
+<!--            <label class="block text-sm font-medium text-[#2D3436] mb-1">Project Name *</label>-->
+<!--            <input formControlName="project_name" type="text"-->
+<!--              class="w-full border border-[#E8E4DC] rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-[#7C9082]/50"-->
+<!--              [class.border-red-400]="isInvalid('project_name')"-->
+<!--              placeholder="Your project name"/>-->
+<!--          </div>-->
           <div>
             <label class="block text-sm font-medium text-[#2D3436] mb-1">Contact Person *</label>
             <input formControlName="contact_person" type="text"
@@ -34,14 +34,15 @@ import { EmailService } from '../../services/email.service';
               [class.border-red-400]="isInvalid('contact_person')"
               placeholder="Full name"/>
           </div>
+          <div>
+            <label class="block text-sm font-medium text-[#2D3436] mb-1">Email Address *</label>
+            <input formControlName="email" type="email"
+                   class="w-full border border-[#E8E4DC] rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-[#7C9082]/50"
+                   [class.border-red-400]="isInvalid('email')"
+                   placeholder="you@example.com"/>
+          </div>
         </div>
-        <div>
-          <label class="block text-sm font-medium text-[#2D3436] mb-1">Email Address *</label>
-          <input formControlName="email" type="email"
-            class="w-full border border-[#E8E4DC] rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-[#7C9082]/50"
-            [class.border-red-400]="isInvalid('email')"
-            placeholder="you@example.com"/>
-        </div>
+
         <div>
           <label class="block text-sm font-medium text-[#2D3436] mb-1">Activity Idea *</label>
           <textarea formControlName="activity_idea" rows="4"
@@ -85,7 +86,7 @@ export class JointActivityFormComponent {
   submitError = signal(false);
 
   form = new FormBuilder().group({
-    project_name: ['', Validators.required],
+    project_name: [''], // this control will stay here in order not to touch the emailJS config
     contact_person: ['', Validators.required],
     email: ['', [Validators.required, Validators.email]],
     activity_idea: ['', Validators.required],
