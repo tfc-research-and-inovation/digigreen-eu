@@ -73,7 +73,7 @@ const INTEREST_OPTIONS = [
           <input formControlName="consent_given" type="checkbox" id="consent-net"
             class="mt-1 rounded border-[#E8E4DC] text-[#7C9082] focus:ring-[#7C9082]/50"/>
           <label for="consent-net" class="text-sm text-[#5A6B5E]">
-            I consent to my data being processed for network membership purposes. *
+            <strong>I consent to my data being processed for network membership purposes. *</strong>
           </label>
         </div>
         @if (showErrors()) {

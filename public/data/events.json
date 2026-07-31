@@ -8,12 +8,14 @@
     "event_type": "Webinar",
     "registration_url": null,
     "is_upcoming": true,
-    "id": "69731c4aba95732f90893ca5",
+    "id": 1,
     "created_date": "2026-01-23T06:59:22.457000",
     "updated_date": "2026-01-23T06:59:22.457000",
     "created_by_id": "69731a42dc432a55387cec8e",
     "created_by": "muhammadmurtuzahussain@gmail.com",
-    "is_sample": false
+    "is_sample": false,
+    "url": null
+
   },
   {
     "title": "Fair Transition Methodologies Workshop",
@@ -24,11 +26,29 @@
     "event_type": "Workshop",
     "registration_url": null,
     "is_upcoming": true,
-    "id": "69731c4aba95732f90893ca6",
+    "id": 2,
     "created_date": "2026-01-23T06:59:22.457000",
     "updated_date": "2026-01-23T06:59:22.457000",
     "created_by_id": "69731a42dc432a55387cec8e",
     "created_by": "muhammadmurtuzahussain@gmail.com",
-    "is_sample": false
+    "is_sample": false,
+    "url": null
+  },
+  {
+    "title": "From Insight to Impact - Innovating for an inclusive twin transition in Europe",
+    "description": "FITTER-EU Final Conference",
+    "event_date": "2026-11-26",
+    "event_time": "9:00 - 17.00 CET",
+    "location": "JRC-Seville, Spain",
+    "event_type": "Conference",
+    "registration_url": null,
+    "is_upcoming": true,
+    "id": 3,
+    "created_date": "2026-01-23T06:59:22.457000",
+    "updated_date": "2026-01-23T06:59:22.457000",
+    "created_by_id": "69731a42dc432a55387cec8e1",
+    "created_by": "",
+    "is_sample": false,
+    "url": "https://www.linkedin.com/posts/fitter-eu-final-conference-ugcPost-7483523426993799169-d2_s/?utm_source=share&utm_medium=member_desktop&rcm=ACoAADawBpQB2yMDuACFF-6iep-o9coWE2sxd48"
   }
 ]
