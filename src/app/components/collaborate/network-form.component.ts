@@ -69,11 +69,12 @@ const INTEREST_OPTIONS = [
             }
           </div>
         </div>
+        <label class="block text-sm font-medium text-[#2D3436] mb-2">Consent Agreement</label>
         <div class="flex items-start gap-3">
           <input formControlName="consent_given" type="checkbox" id="consent-net"
             class="mt-1 rounded border-[#E8E4DC] text-[#7C9082] focus:ring-[#7C9082]/50"/>
           <label for="consent-net" class="text-sm text-[#5A6B5E]">
-            <strong>I consent to my data being processed for network membership purposes. *</strong>
+           I consent to my data being processed for network membership purposes. *
           </label>
         </div>
         @if (showErrors()) {
