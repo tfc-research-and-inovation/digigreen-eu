@@ -1,5 +1,4 @@
 [
-
   {
     "title": "From Insight to Impact - Innovating for an inclusive twin transition in Europe",
     "description": "FITTER-EU Final Conference",
@@ -16,5 +15,22 @@
     "created_by": "",
     "is_sample": false,
     "url": "https://www.linkedin.com/posts/fitter-eu-final-conference-ugcPost-7483523426993799169-d2_s/?utm_source=share&utm_medium=member_desktop&rcm=ACoAADawBpQB2yMDuACFF-6iep-o9coWE2sxd48"
+  },
+  {
+    "title": "DigiGreenTT cluster webinar ",
+    "description": "FITTER-EU Final Conference",
+    "event_date": "2026-10-09",
+    "event_time": "15:00 - 16.00 CET",
+    "location": "Online",
+    "event_type": "Conference",
+    "registration_url": null,
+    "is_upcoming": true,
+    "id": 3,
+    "created_date": "2026-01-23T06:59:22.457000",
+    "updated_date": "2026-01-23T06:59:22.457000",
+    "created_by_id": "69731a42dc432a55387cec8e1",
+    "created_by": "",
+    "is_sample": false,
+    "url": "https://www.linkedin.com/posts/tfcril_twintransition-greentransition-digitaltransition-activity-7493637659131756545-7eZ5/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAmAtQsBuW68DNeSWTT3ZGP4f3Huz94xkpo"
   }
 ]

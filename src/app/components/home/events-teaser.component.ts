@@ -1,12 +1,11 @@
 import { Component, Input } from '@angular/core';
 import { Event } from '../../models';
 import { DatePipe } from '@angular/common';
-import {RouterLink} from '@angular/router';
 
 @Component({
   selector: 'app-events-teaser',
   standalone: true,
-  imports: [DatePipe, RouterLink],
+  imports: [DatePipe],
   template: `
     <div class="bg-white rounded-2xl border border-[#E8E4DC] p-6 md:p-8 flex flex-col">
       <h3 class="text-lg font-semibold text-[#2D3436] mb-4">Upcoming Events</h3>
@@ -20,7 +19,7 @@ import {RouterLink} from '@angular/router';
                 <p class="text-xs text-[#7C9082] uppercase">{{ event.event_date | date:'MMM' }}</p>
                 <p class="text-lg font-semibold text-[#2D3436] leading-none">{{ event.event_date | date:'d' }}</p>
               </div>
-              <div [class.cursor-pointer]="event.url" (click)="openExternalLink(event.url)">
+              <div class="w-full" [class.cursor-pointer]="event.url" (click)="openExternalLink(event.url)">
                 <p class="text-sm font-medium text-[#2D3436] line-clamp-2">{{ event.title }}</p>
                 <div class="flex justify-between">
                   <p class="text-xs text-[#7C9082] mt-0.5">{{ event.event_date | date:'MMM d, yyyy' }}</p>
