@@ -8,6 +8,7 @@ export interface Event {
   event_type?: 'Roundtable' | 'Workshop' | 'Hackathon' | 'Conference' | 'Webinar' | 'Other';
   registration_url?: string;
   is_upcoming: boolean;
+  url: string
 }
 
 export interface NewsItem {

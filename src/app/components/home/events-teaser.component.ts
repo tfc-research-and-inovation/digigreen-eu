@@ -15,15 +15,19 @@ import { DatePipe } from '@angular/common';
         <ul class="space-y-4 flex-1">
           @for (event of events; track event.id) {
             <li class="border-b border-[#E8E4DC] pb-4 last:border-0 last:pb-0 flex gap-3">
-              <div class="shrink-0 w-12 text-center bg-[#F5F3EF] rounded-lg py-1 px-2">
+              <div class="flex flex-col justify-center shrink-0 w-12 text-center bg-[#F5F3EF] rounded-lg py-1 px-2">
                 <p class="text-xs text-[#7C9082] uppercase">{{ event.event_date | date:'MMM' }}</p>
                 <p class="text-lg font-semibold text-[#2D3436] leading-none">{{ event.event_date | date:'d' }}</p>
               </div>
-              <div>
+              <div class="w-full" [class.cursor-pointer]="event.url" (click)="openExternalLink(event.url)">
                 <p class="text-sm font-medium text-[#2D3436] line-clamp-2">{{ event.title }}</p>
-                @if (event.location) {
-                  <p class="text-xs text-[#7C9082] mt-0.5">{{ event.location }}</p>
-                }
+                <div class="flex justify-between">
+                  <p class="text-xs text-[#7C9082] mt-0.5">{{ event.event_date | date:'MMM d, yyyy' }}</p>
+                  @if (event.location) {
+                    <p class="text-xs text-[#7C9082] mt-0.5">{{ event.location }}</p>
+                  }
+                </div>
+
               </div>
             </li>
           }
@@ -34,5 +38,10 @@ import { DatePipe } from '@angular/common';
 })
 export class EventsTeaserComponent {
   @Input() events: Event[] = [];
+
+  protected openExternalLink(url: string) {
+    if(!url) return;
+    window.open(url, '_blank');
+  }
 }
 
