@@ -15,8 +15,8 @@
     "id": "69731c4aba95732f90893ca4",
     "created_date": "2026-01-23T06:59:22.455000",
     "updated_date": "2026-01-23T06:59:22.455000",
-    "created_by_id": "69731a42dc432a55387cec8e",
-    "created_by": "muhammadmurtuzahussain@gmail.com",
+    "created_by_id": "",
+    "created_by": "admin",
     "is_sample": false
   },
   {
@@ -35,8 +35,8 @@
     "id": "69731c4aba95732f90893ca2",
     "created_date": "2026-01-23T06:59:22.454000",
     "updated_date": "2026-04-14T10:42:24.411000",
-    "created_by_id": "69731a42dc432a55387cec8e",
-    "created_by": "muhammadmurtuzahussain@gmail.com",
+    "created_by_id": "",
+    "created_by": "admin",
     "is_sample": false
   },
   {
@@ -45,7 +45,7 @@
   "content": "Christina is Associate Professor at the School of Spatial Planning and Development, Aristotle University of Thessaloniki (AUTH), Greece, and a member of the URENIO Research Unit. Her research primarily focuses on regional innovation systems, smart cities, innovation policy, regional resilience, and the green, digital and twin transitions and it is the latter that the DigiGreenTT cluster webinar will focus on.\n\nChristina coordinates the HorizonEurope project ST4TE (Strategies for Just and Equitable Twin Transitions in Europe) and the Horizon Europe project PACT. Both examine how Europe's transitions can be made more inclusive and territorially balanced, which is of importance across many regions of Europe. Her recent research focuses on measuring regional green, digital and twin transitions and examining their implications for regional development and territorial cohesion and the webinar centred on this. \n\nIt promises to be insightful!\n\nDigiGreenTT webinar:\n\uD83D\uDDD3\uFE0F 9th September 2026 │ 15:00–16:00 CET \n\nRegistration link: \nhttps://lnkd.in/d-i4ZSGK\n\nRegister before 8th September, 17:00 CET to secure spot.",
   "image_url": "https://res.cloudinary.com/yxzbryel/image/upload/v1788470707/christina_kakderi.jpg",
   "image_alt": "Team collaboration meeting",
-  "publish_date": "2026-01-15",
+  "publish_date": "2026-09-03",
   "tags": [
     "Announcement",
     "Collaboration"
@@ -53,10 +53,30 @@
   "is_archived": false,
   "is_published": true,
   "id": "3",
-  "created_date": "2026-01-23T06:59:22.454000",
-  "updated_date": "2026-04-14T10:42:24.411000",
-  "created_by_id": "69731a42dc432a55387cec8e",
-  "created_by": "",
+  "created_date": "2026-09-03T06:59:22.454000",
+  "updated_date": "",
+  "created_by_id": "",
+  "created_by": "admin",
   "is_sample": false
+  },
+  {
+    "title": "FITTER-EU Final Conference ",
+    "excerpt": "\"From Insight to impact: Innovating for an Inclusive Twin Transition in Europe\"",
+    "content": "Registration is open for Fitter-EU Final Conference\n\n\"From Insight to impact: Innovating for an Inclusive Twin Transition in Europe\"\n\nRegistration link: https://lnkd.in/d7DJ5eph\n\nFitter-EU's final event brings together policymakers, researchers and practitioners for a day of discussion on the project's findings and what should happen next.\n\nSince 2024, the project has been researching how Europe's green and digital transitions play out across different regions, sectors and groups, and what it would take for the benefits to reach further than they currently do. In Seville, we set out what that research shows and open it up for discussion.\n\nThe day is designed for exchange rather than presentation, so there will be time to question the conclusions and bring your own experience into the conversation.\n\n\uD83D\uDCC5 26 November 2026\n\uD83D\uDCCD JRC Seville, Spain\n\nRegister today to secure your place.",
+    "image_url": "https://res.cloudinary.com/yxzbryel/image/upload/v1788519030/Fitter-EU_final_conference.jpg",
+    "image_alt": "Team collaboration meeting",
+    "publish_date": "2026-09-04",
+    "tags": [
+      "Announcement",
+      "Conference"
+    ],
+    "is_archived": false,
+    "is_published": true,
+    "id": "4",
+    "created_date": "2026-09-04T06:59:22.454000",
+    "updated_date": "",
+    "created_by_id": "",
+    "created_by": "admin",
+    "is_sample": false
   }
 ]
