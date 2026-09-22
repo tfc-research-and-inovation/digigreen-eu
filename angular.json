@@ -6,7 +6,7 @@
   },
   "newProjectRoot": "projects",
   "projects": {
-    "ng-fitter-eu-project": {
+    "digigreentt": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -66,10 +66,10 @@
           "builder": "@angular/build:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "ng-fitter-eu-project:build:production"
+              "buildTarget": "digigreentt:build:production"
             },
             "development": {
-              "buildTarget": "ng-fitter-eu-project:build:development"
+              "buildTarget": "digigreentt:build:development"
             }
           },
           "defaultConfiguration": "development"

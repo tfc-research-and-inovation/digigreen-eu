@@ -19,7 +19,7 @@ import { PageHeaderComponent } from '../../components/shared/page-header.compone
             <p>This website uses essential cookies only. These are necessary for the website to function and cannot be disabled. We do not use tracking or advertising cookies.</p>
             <p class="mt-3">Essential cookies we use:</p>
             <ul class="mt-2 space-y-2 list-disc list-inside">
-              <li><strong>fitter-cookie-consent</strong> – records that you have accepted our cookie notice.</li>
+              <li><strong>digigreentt-cookie-consent</strong> – records that you have accepted our cookie notice.</li>
             </ul>
           </div>
           <div>

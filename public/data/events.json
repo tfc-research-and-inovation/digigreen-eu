@@ -24,7 +24,7 @@
     "location": "Online",
     "event_type": "Conference",
     "registration_url": null,
-    "is_upcoming": true,
+    "is_upcoming": false,
     "id": 2,
     "created_date": "2026-01-23T06:59:22.457000",
     "updated_date": "2026-01-23T06:59:22.457000",

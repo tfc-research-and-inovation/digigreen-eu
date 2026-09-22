@@ -46,7 +46,7 @@ export class LayoutComponent implements OnInit {
   ];
 
   ngOnInit() {
-    const consent = localStorage.getItem('fitter-cookie-consent');
+    const consent = localStorage.getItem('digigreentt-cookie-consent');
     this.cookieConsent.set(!!consent);
   }
 
@@ -67,7 +67,7 @@ export class LayoutComponent implements OnInit {
   }
 
   acceptCookies() {
-    localStorage.setItem('fitter-cookie-consent', 'true');
+    localStorage.setItem('digigreentt-cookie-consent', 'true');
     this.cookieConsent.set(true);
   }
 
