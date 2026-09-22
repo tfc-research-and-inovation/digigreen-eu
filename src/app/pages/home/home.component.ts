@@ -66,7 +66,7 @@ import { EventsTeaserComponent } from '../../components/home/events-teaser.compo
               title="What is the DigiGreenTT Group Engagement"
               description="DigiGreenTT Group connects Horizon Europe projects working on fair, inclusive green and digital transitions to enable cross-learning, collaboration, and joint activities."
               linkText="Learn more"
-              linkPage="digigreentt-projects"
+              linkPage="about"
             />
             <app-events-teaser [events]="events()" />
             <app-news-teaser [news]="news()" />

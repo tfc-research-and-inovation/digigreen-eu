@@ -16,6 +16,10 @@ import {RouterLink} from '@angular/router';
       <!-- Mission -->
       <section class="py-16 md:py-24">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 class="text-2xl md:text-3xl font-semibold text-[#2D3436] mb-6">What is the DigiGreenTT Group Engagement</h2>
+          <div class="space-y-4 text-[#5A6B5E] leading-relaxed mb-6">
+            <p>DigiGreenTT Group connects Horizon Europe projects working on fair, inclusive green and digital transitions to enable cross-learning, collaboration, and joint activities and enables other stakeholders to join the cluster and participate.</p>
+          </div>
           <div class="grid lg:grid-cols-2 gap-12 lg:gap-16">
             <div>
               <h2 class="text-2xl md:text-3xl font-semibold text-[#2D3436] mb-6">Our Mission</h2>
