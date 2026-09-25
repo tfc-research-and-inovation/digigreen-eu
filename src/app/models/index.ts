@@ -55,10 +55,10 @@ export interface Resource {
   id: string;
   title: string;
   resource_type: 'Deliverable' | 'Publication' | 'Better Practice Guide' | 'Policy Brief' | 'Data & DMP';
-  description?: string;
-  file_url?: string;
-  publish_date?: string;
-  authors?: string;
+  description: string;
+  file_url: string;
+  publish_date: string;
+  authors: string;
   work_package?: string;
   deliverable_number?: string;
   is_published: boolean;
