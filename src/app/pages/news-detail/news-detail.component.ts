@@ -41,7 +41,7 @@ import { format, parseISO } from 'date-fns';
           <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
             <p class="text-lg text-[#5A6B5E] leading-relaxed mb-8 font-medium">{{ item()!.excerpt }}</p>
             @if (item()!.content) {
-              <div class="prose prose-slate max-w-none text-[#2D3436] whitespace-pre-wrap leading-relaxed">{{ item()!.content }}</div>
+              <div class="prose prose-slate max-w-none text-[#2D3436] whitespace-pre-wrap leading-relaxed" [innerHTML]="item()!.content"></div>
             }
           </div>
         </section>

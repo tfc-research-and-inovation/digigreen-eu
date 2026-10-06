@@ -11,7 +11,7 @@ import { NewsItem } from '../../models';
     <article class="bg-white rounded-xl border border-[#E8E4DC] overflow-hidden hover:shadow-md transition-shadow flex flex-col">
       @if (item.image_url) {
         <img [src]="item.image_url" [alt]="item.image_alt || item.title"
-             class="w-full h-48 object-cover"/>
+             class="w-full object-cover"/>
       }
       <div class="p-6 flex flex-col flex-1">
         <div class="flex flex-wrap gap-2 mb-3">
