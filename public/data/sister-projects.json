@@ -18,24 +18,6 @@
     "is_sample": false
   },
   {
-    "website": "https://www.linkedin.com/company/life-renpower/about/",
-    "contact_name": null,
-    "logo_url": null,
-    "name": "RENPOWER",
-    "description": "Renewable Energy and Power for Communities – advancing community-led renewable energy initiatives to ensure fair access to clean energy as part of the green transition.",
-    "is_featured": false,
-    "status": "Onboard",
-    "tags": ["Green", "Just Transition", "Policy"],
-    "contact_email": null,
-    "order": 14.0,
-    "id": "69dce7d5542ee9069202b580",
-    "created_date": "2026-04-13T12:55:49.887000",
-    "updated_date": "2026-04-13T13:17:08.422000",
-    "created_by_id": "69731a42dc432a55387cec8e",
-    "created_by": "muhammadmurtuzahussain@gmail.com",
-    "is_sample": false
-  },
-  {
     "name": "TWIN RD",
     "website": "https://www.twinrd.eu/",
     "logo_url": null,
