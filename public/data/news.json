@@ -40,7 +40,7 @@
     "is_sample": false
   },
   {
-  "title": "Digigreentt Welcomes Prof. Christina Kakderi",
+  "title": "DigiGreenTT Welcomes Prof. Christina Kakderi",
   "excerpt": "We are delighted to  welcome  Prof. Kakderi as the first speaker for our autumn webinar series. Prof. Christina Kakderi,  is the coordinator of the ST4TE & PACT projects, joins us on 9th Sept 26 to present the #dashboard and #API built by ST4TE for the just measuring of the #twintransition.  ",
   "content": "Christina is Associate Professor at the School of Spatial Planning and Development, Aristotle University of Thessaloniki (AUTH), Greece, and a member of the URENIO Research Unit. Her research primarily focuses on regional innovation systems, smart cities, innovation policy, regional resilience, and the green, digital and twin transitions and it is the latter that the DigiGreenTT cluster webinar will focus on.\n\nChristina coordinates the HorizonEurope project ST4TE (Strategies for Just and Equitable Twin Transitions in Europe) and the Horizon Europe project PACT. Both examine how Europe's transitions can be made more inclusive and territorially balanced, which is of importance across many regions of Europe. Her recent research focuses on measuring regional green, digital and twin transitions and examining their implications for regional development and territorial cohesion and the webinar centred on this. \n\nIt promises to be insightful!\n\nDigiGreenTT webinar:\n\uD83D\uDDD3\uFE0F 9th September 2026 │ 15:00–16:00 CET \n\nRegistration link: \nhttps://lnkd.in/d-i4ZSGK\n\nRegister before 8th September, 17:00 CET to secure spot.",
   "image_url": "https://res.cloudinary.com/yxzbryel/image/upload/v1788470707/christina_kakderi.jpg",
@@ -98,5 +98,26 @@
     "created_by_id": "",
     "created_by": "admin",
     "is_sample": false
+  },
+  {
+    "title": "DigiGreenTT Cluster - Green & Digital Transition Webinar Series 1",
+    "excerpt": "On 9th September, the DigiGreenTT cluster webinar was held.",
+    "content": "Titled \"Beyond Green and Digital: \nRethinking the Measurement of the Twin Transition\" - a look at how the twin transition is measured across European regions, it was presented by Dr. Christina Kakderi (AUTH, ST4TE) and moderated by Mary Corbett (TFC, FITTER-EU). It is primarily based on the work and findings of the ongoing #HorizonEurope ST4TE project.\n\nDr. Karderi explained digital technologies are meant to reinforce each other, with digital tools making green solutions smarter and more controllable, while green objectives give digital technologies a purpose beyond efficiency alone. She illustrated this, sector by sector for instance, renewable energy generation combined with grid sensing and control produces smart grids capable of balancing intermittent supply; electrification combined with connectivity enables lower-emission connected mobility. The central question of the session was deceptively simple: is that combination actually happening and where, and for whom? ",
+    "image_url": "",
+    "image_alt": "",
+    "publish_date": "2026-10-10",
+    "tags": [
+      "Announcement",
+      "Conference"
+    ],
+    "is_archived": false,
+    "is_published": true,
+    "id": "6",
+    "created_date": "2026-10-10T06:59:22.454000",
+    "updated_date": "",
+    "created_by_id": "",
+    "created_by": "admin",
+    "is_sample": false
   }
+
 ]
