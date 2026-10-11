@@ -19,13 +19,3 @@ html, body {
   color: #2D3436;
   font-family: system-ui, -apple-system, sans-serif;
 }
-a {
-  color: var(--sage);
-  text-decoration: none;
-}
-
-a:hover {
-  color: var(--sage-dark);
-}
-
-
