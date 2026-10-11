@@ -50,7 +50,7 @@
     "Announcement",
     "Collaboration"
   ],
-  "is_archived": false,
+  "is_archived": true,
   "is_published": true,
   "id": "3",
   "created_date": "2026-09-03T06:59:22.454000",
@@ -70,7 +70,7 @@
       "Announcement",
       "Conference"
     ],
-    "is_archived": false,
+    "is_archived": true,
     "is_published": true,
     "id": "4",
     "created_date": "2026-09-04T06:59:22.454000",
@@ -90,7 +90,7 @@
       "Announcement",
       "Conference"
     ],
-    "is_archived": false,
+    "is_archived": true,
     "is_published": true,
     "id": "5",
     "created_date": "2026-09-04T06:59:22.454000",
@@ -103,7 +103,7 @@
     "title": "DigiGreenTT Cluster - Green & Digital Transition Webinar Series 1",
     "excerpt": "On 9th September, the DigiGreenTT cluster webinar was held.",
     "content": "Titled \"Beyond Green and Digital: \nRethinking the Measurement of the Twin Transition\" - a look at how the twin transition is measured across European regions, it was presented by Dr. Christina Kakderi (AUTH, ST4TE) and moderated by Mary Corbett (TFC, FITTER-EU). It is primarily based on the work and findings of the ongoing #HorizonEurope ST4TE project.\n\nDr. Karderi explained digital technologies are meant to reinforce each other, with digital tools making green solutions smarter and more controllable, while green objectives give digital technologies a purpose beyond efficiency alone. She illustrated this, sector by sector for instance, renewable energy generation combined with grid sensing and control produces smart grids capable of balancing intermittent supply; electrification combined with connectivity enables lower-emission connected mobility. The central question of the session was deceptively simple: is that combination actually happening and where, and for whom? ",
-    "image_url": "",
+    "image_url": "https://res.cloudinary.com/yxzbryel/image/upload/v1791749463/digigreenCluster.jpg",
     "image_alt": "",
     "publish_date": "2026-10-10",
     "tags": [

@@ -35,7 +35,7 @@ import { format, parseISO } from 'date-fns';
         @if (item()!.image_url) {
           <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 mt-8">
             <img [src]="item()!.image_url" [alt]="item()!.image_alt || item()!.title"
-                 class="w-full rounded-xl shadow-md object-cover max-h-80"/>
+                 class="block mx-auto max-w-full max-h-80 w-auto h-auto rounded-xl shadow-md object-contain"/>
           </div>
         }
         <section class="py-12">
