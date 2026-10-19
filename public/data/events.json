@@ -49,5 +49,22 @@
     "created_by": "",
     "is_sample": false,
     "url": "https://www.linkedin.com/feed/?highlightedUpdateUrn=urn%3Ali%3Aactivity%3A7514251618494623745&highlightedUpdateType=SOCIAL_SHARE&origin=SOCIAL_SHARE&utm_source=share&utm_medium=member_desktop&rcm=ACoAAAmAtQsBuW68DNeSWTT3ZGP4f3Huz94xkpo"
+  },
+  {
+    "title": "ST4TE Final Conference",
+    "description": "ST4TE Final Conference",
+    "event_date": "2026-12-11",
+    "event_time": "09.00 - 14.00 CET",
+    "location": "Brussels, Belgium",
+    "event_type": "Conference",
+    "registration_url": null,
+    "is_upcoming": true,
+    "id": 1,
+    "created_date": "2026-10-19T06:59:22.457000",
+    "updated_date": "2026-10-19T06:59:22.457000",
+    "created_by_id": "pp",
+    "created_by": "",
+    "is_sample": false,
+    "url": "https://st4te.eu/events/st4te-final-conference"
   }
 ]
