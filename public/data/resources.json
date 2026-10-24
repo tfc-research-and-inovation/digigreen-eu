@@ -10,6 +10,114 @@
     "work_package": "",
     "deliverable_number": "",
     "is_published": true
+  },
+  {
+    "id": 2,
+    "title": "FITTER-EU Deliverable D2.1",
+    "resource_type": "Deliverable",
+    "description": "Embedding Social Justice in Twin Transition Research: Concepts, Definitions and Methodological Approach",
+    "file_url": "https://drive.google.com/file/d/1lxBVfJZ-wZsnGgJLP4llaPWAmCuJbgCq/view?usp=drive_link",
+    "publish_date": "2025-03-17T08:59:22.454000",
+    "authors": "Alicja Bobek, Noirin MacNamara, Sara Clavero",
+    "work_package": "",
+    "deliverable_number": "",
+    "is_published": true
+  },
+  {
+    "id": 3,
+    "title": "FITTER-EU Deliverable D3.1",
+    "resource_type": "Deliverable",
+    "description": "Report on vulnerabilities mapping under the baseline scenario",
+    "file_url": "https://drive.google.com/file/d/16ZOmJnKKON2d-XHVlfsj765MxDUcBXIr/view?usp=drive_link",
+    "publish_date": "2025-03-17T08:59:22.454000",
+    "authors": "Olga Kolotouchkina, Paloma Piqueiras (UCM)",
+    "work_package": "",
+    "deliverable_number": "",
+    "is_published": true
+  },
+  {
+    "id": 3,
+    "title": "FITTER-EU Deliverable D2.2",
+    "resource_type": "Deliverable",
+    "description": "Embedding social justice in twin transition research: Concepts, definitions and methodological approach",
+    "file_url": "https://drive.google.com/file/d/1LXRmfkmoQUf9cn9kpnFl3gqViSyXkOmY/view?usp=drive_link",
+    "publish_date": "2025-03-17T05:59:22.454000",
+    "authors": "ONóirín MacNamara, Alicja Bobek, Sara Clavero",
+    "work_package": "",
+    "deliverable_number": "",
+    "is_published": true
+  },
+  {
+    "id": 4,
+    "title": "FITTER-EU Deliverable D7.8",
+    "resource_type": "Deliverable",
+    "description": "Policy Brief",
+    "file_url": "https://drive.google.com/file/d/1Ecb044z7Gd1JWachMwdpn7CRtLGBpEKK/view?usp=drive_link",
+    "publish_date": "2025-07-03T05:59:22.454000",
+    "authors": "Alicja Bobek, Noirin MacNamara, Silvia Sansonetti",
+    "work_package": "",
+    "deliverable_number": "",
+    "is_published": true
+  },
+  {
+    "id": 5,
+    "title": "FITTER-EU Deliverable D2.4",
+    "resource_type": "Deliverable",
+    "description": "Mapping the governance of the twin-transition",
+    "file_url": "https://drive.google.com/file/d/1FY66_d_TyxK8iKP49PzJaz4YZSDsRXLc/view?usp=drive_link",
+    "publish_date": "2025-11-06T04:59:22.454000",
+    "authors": "Silvia Sansonetti and Roberta Cupertino (FGB)",
+    "work_package": "",
+    "deliverable_number": "",
+    "is_published": true
+  },
+  {
+    "id": 6,
+    "title": "FITTER-EU Deliverable D3.2",
+    "resource_type": "Deliverable",
+    "description": "Report on the identification of disadvantaged groups",
+    "file_url": "https://drive.google.com/file/d/1VPyRQUZ3Md3anSjBlvvHvu3oY38ph1eb/view?usp=drive_link",
+    "publish_date": "2025-11-06T05:59:22.454000",
+    "authors": "Lluís Viñé, Laura Armayones",
+    "work_package": "",
+    "deliverable_number": "",
+    "is_published": true
+  },
+  {
+    "id": 6,
+    "title": "FITTER-EU Deliverable D3.3",
+    "resource_type": "Deliverable",
+    "description": "Report on the outcomes of hazards and negative impacts",
+    "file_url": "https://drive.google.com/file/d/1MU0TbleAIozmH_2Eu1vROuaMVekyKJKq/view?usp=drive_link",
+    "publish_date": "2025-11-06T06:59:22.4540000",
+    "authors": "Laura Armayones, Lluís Viñé",
+    "work_package": "",
+    "deliverable_number": "",
+    "is_published": true
+  },
+  {
+    "id": 7,
+    "title": "FITTER-EU Deliverable D2.3",
+    "resource_type": "Deliverable",
+    "description": "Embedding social justice in twin transition research: Concepts, definitions and methodological approach",
+    "file_url": "https://drive.google.com/file/d/1ugHLzlwW4zol3eox-fgsYC3vQyy8_pNe/view?usp=drive_link",
+    "publish_date": "2026-01-22T06:59:22.454000",
+    "authors": "Sara Clavero, Nóirín MacNamara, Alicja Bobek",
+    "work_package": "",
+    "deliverable_number": "",
+    "is_published": true
+  },
+  {
+    "id": 8,
+    "title": "FITTER-EU Deliverable D4.2",
+    "resource_type": "Deliverable",
+    "description": "Methodology of the co-creation process and report on mitigation measures",
+    "file_url": "https://drive.google.com/file/d/1BL3E8CGefvgWd0HGq4TUhlFca7zo10mZ/view?usp=drive_link",
+    "publish_date": "2026-02-20T06:59:22.454000",
+    "authors": "Maria Sangiuliano, Oriana Salomón Balsamo",
+    "work_package": "",
+    "deliverable_number": "",
+    "is_published": true
   }
 ]
 

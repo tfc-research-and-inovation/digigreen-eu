@@ -136,8 +136,8 @@ export class ResourcesComponent implements OnInit {
   readonly resourceTypes = RESOURCE_TYPES;
 
   filtered = computed(() => {
-    const t = this.selectedType();
-    return t === 'all' ? this.all() : this.all().filter(r => r.resource_type === t);
+    const type = this.selectedType();
+    return type === 'all' ? this.all() : this.all().filter(resource => resource.resource_type === type);
   });
 
   typeColor(type: string): string {
