@@ -72,24 +72,6 @@
     "is_sample": false
   },
   {
-    "name": "Shared Green Deal",
-    "website": "https://sharedgreendeal.eu/",
-    "logo_url": null,
-    "description": "Promoting shared approaches to implementing the European Green Deal with attention to social justice and inclusion.",
-    "status": "Onboard",
-    "tags": ["Green", "Policy", "Inclusion"],
-    "contact_name": null,
-    "contact_email": null,
-    "is_featured": false,
-    "order": 8.0,
-    "id": "69731c4aba95732f90893c9b",
-    "created_date": "2026-01-23T06:59:22.441000",
-    "updated_date": "2026-01-23T06:59:22.441000",
-    "created_by_id": "69731a42dc432a55387cec8e",
-    "created_by": "muhammadmurtuzahussain@gmail.com",
-    "is_sample": false
-  },
-  {
     "name": "TFC Research & Innovation",
     "website": "https://tfcengage.com",
     "logo_url": null,
