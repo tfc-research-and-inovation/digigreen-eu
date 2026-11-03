@@ -66,5 +66,22 @@
     "created_by": "",
     "is_sample": false,
     "url": "https://st4te.eu/events/st4te-final-conference"
+  },
+  {
+    "title": "Readiness workshop webinar - Focus: FITTER-EU'",
+    "description": "Readiness workshop webinar - Focus: FITTER-EU'",
+    "event_date": "2026-11-16",
+    "event_time": "16.30 - 17.45 CET",
+    "location": "Online",
+    "event_type": "Conference",
+    "registration_url": null,
+    "is_upcoming": true,
+    "id": 1,
+    "created_date": "2026-11-4T06:59:22.457000",
+    "updated_date": "2026-11-4T06:59:22.457000",
+    "created_by_id": "pp",
+    "created_by": "",
+    "is_sample": false,
+    "url": "https://www.linkedin.com/posts/digigreentt-fittereu-digigreentt-share-7523029543394160640-jBpi/?utm_source=share&utm_medium=member_desktop&rcm=ACoAADawBpQB2yMDuACFF-6iep-o9coWE2sxd48"
   }
 ]

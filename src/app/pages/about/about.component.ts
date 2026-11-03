@@ -29,7 +29,7 @@ import {RouterLink} from '@angular/router';
                   understanding, and mitigating the social inequalities that can arise from rapid technological
                   and environmental change.</p>
                 <p>Initiated in the FITTER-EU Horizon Europe project (Grant Agreement No. 101132546) and delivered
-                  through TFC Research and Innovation Limited (Ireland), the DigiGreenTT group brings together a
+                  through TFCEngage.com (Ireland), the DigiGreenTT group brings together a
                   series of European projects in the Twin-Transition space with a collective aim to cross-fertilize
                   and transcend individual project experiences for the wider good of the communities served.
                 </p>
