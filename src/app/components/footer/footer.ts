@@ -15,7 +15,7 @@ export class Footer implements OnInit{
 
   readonly quickLinks = [
     { label: 'About', path: '/about' },
-    { label: 'DigiGreenTT Group', path: '/digigreentt-projects' },
+    { label: 'DigiGreenTT Cluster', path: '/digigreentt-projects' },
     { label: 'News', path: '/news' },
     { label: 'Collaborate', path: '/collaborate' }
   ];
