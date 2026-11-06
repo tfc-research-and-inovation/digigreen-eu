@@ -9,27 +9,27 @@ import {RouterLink} from '@angular/router';
   template: `
     <div>
       <app-page-header
-        title="About FITTER-EU"
+        title="DigiGreenTT Cluster"
         subtitle="Fair, Inclusive Twin Transition for European Regions – advancing social justice to reduce inequality in Europe's green and digital transitions."
         breadcrumb="About"/>
 
       <!-- Mission -->
       <section class="py-16 md:py-24">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 class="text-2xl md:text-3xl font-semibold text-[#2D3436] mb-6">What is the DigiGreenTT Group Engagement</h2>
+          <h2 class="text-2xl md:text-3xl font-semibold text-[#2D3436] mb-6">What is the DigiGreenTT Cluster Engagement</h2>
           <div class="space-y-4 text-[#5A6B5E] leading-relaxed mb-6">
-            <p>DigiGreenTT Group connects Horizon Europe projects working on fair, inclusive green and digital transitions to enable cross-learning, collaboration, and joint activities and enables other stakeholders to join the cluster and participate.</p>
+            <p>DigiGreenTT Cluster connects Horizon Europe projects working on fair, inclusive green and digital transitions to enable cross-learning, collaboration, and joint activities and enables other stakeholders to join the cluster and participate.</p>
           </div>
           <div class="grid lg:grid-cols-2 gap-12 lg:gap-16">
             <div>
               <h2 class="text-2xl md:text-3xl font-semibold text-[#2D3436] mb-6">Our Mission</h2>
               <div class="space-y-4 text-[#5A6B5E] leading-relaxed">
-                <p> DigiGreenTT is a cluster group focused on supporting Europe's twin transition—green and
+                <p> DigiGreenTT is a cluster focused on supporting Europe's twin transition—green and
                   digital— with an underlying philosophy to leave no one behind. Our work centres on identifying,
                   understanding, and mitigating the social inequalities that can arise from rapid technological
                   and environmental change.</p>
                 <p>Initiated in the FITTER-EU Horizon Europe project (Grant Agreement No. 101132546) and delivered
-                  through TFCEngage.com (Ireland), the DigiGreenTT group brings together a
+                  through TFCENGAGE.com (Ireland), the DigiGreenTT Cluster brings together a
                   series of European projects in the Twin-Transition space with a collective aim to cross-fertilize
                   and transcend individual project experiences for the wider good of the communities served.
                 </p>
@@ -51,7 +51,7 @@ import {RouterLink} from '@angular/router';
           </div>
           <h2 class="text-2xl md:text-3xl font-semibold text-[#2D3436] mt-10 mb-6">Our Aim</h2>
           <div class="space-y-4 text-[#5A6B5E] leading-relaxed mb-6">
-            <p>DigiGreenTT is a cluster group focused on supporting Europe's twin transition—green and digital— with
+            <p>DigiGreenTT is a cluster focused on supporting Europe's twin transition—green and digital— with
               an underlying philosophy to leave no one behind, whereby everyone is equal. Our aim is to support the
               identification, understanding and mitigation issues central to social inequalities across Europe that
               may arise from rapid twin transitional technological and environmental changes.
