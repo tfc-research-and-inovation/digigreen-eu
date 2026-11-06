@@ -12,7 +12,7 @@ import { EmptyStateComponent } from '../../components/shared/empty-state.compone
   imports: [PageHeaderComponent, NewsCardComponent, LoadingStateComponent, EmptyStateComponent],
   template: `
     <div>
-      <app-page-header title="News" subtitle="Latest news and updates from the FITTER-EU project." breadcrumb="News"/>
+      <app-page-header title="News" subtitle="Latest news and updates." breadcrumb="News"/>
       <section class="py-16 md:py-24">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           @if (loading()) {
