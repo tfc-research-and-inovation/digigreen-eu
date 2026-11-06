@@ -1,0 +1,96 @@
+<header class="bg-white border-b border-[#E8E4DC] sticky top-0 z-40">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex justify-between items-center h-20 md:h-24">
+      <!-- Logo -->
+      <a routerLink="/" class="flex items-center gap-3">
+        <!--          <span class="text-xl md:text-2xl font-semibold text-[#2D3436] tracking-tight">DigiGreenTT</span>-->
+        <img src="logo.png" alt="DigiGreenTT Logo" class=" sm:inline ml-2 w-24 h-24">
+        <span class="hidden sm:inline ml-2 text-xs text-[#7C9082] font-medium uppercase tracking-wider">Twin Transition</span>
+      </a>
+
+      <!-- Desktop Nav -->
+      <nav class="hidden lg:flex items-center gap-1">
+        @for (item of navItems; track item.name) {
+          @if (item.dropdown) {
+            <div class="relative" (mouseleave)="closeDropdown()">
+              <button
+                (mouseenter)="toggleDropdown(item.name)"
+                (click)="toggleDropdown(item.name)"
+                class="flex items-center gap-1 px-3 py-2 text-sm text-[#2D3436] hover:text-[#7C9082] transition-colors rounded-md hover:bg-[#F5F3EF]">
+                {{ item.name }}
+                <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                </svg>
+              </button>
+              @if (openDropdown() === item.name) {
+                <div class="absolute left-0 top-full w-56 bg-white rounded-md shadow-lg border border-[#E8E4DC] py-1 z-50">
+                  @for (sub of item.dropdown; track sub.name) {
+                    <a [routerLink]="sub.route" [queryParams]="sub.params ? parseParams(sub.params) : null"
+                       (click)="closeDropdown()"
+                       class="block px-4 py-2 text-sm text-[#2D3436] hover:bg-[#F5F3EF] hover:text-[#7C9082]">
+                      {{ sub.name }}
+                    </a>
+                  }
+                </div>
+              }
+            </div>
+          } @else {
+            <a [routerLink]="item.route"
+               routerLinkActive="text-[#7C9082] bg-[#7C9082]/10 font-medium"
+               [routerLinkActiveOptions]="{exact: item.route === '/'}"
+               class="px-3 py-2 text-sm rounded-md transition-colors text-[#2D3436] hover:text-[#7C9082] hover:bg-[#F5F3EF]">
+              {{ item.name }}
+            </a>
+          }
+        }
+      </nav>
+
+      <!-- Mobile toggle -->
+      <button (click)="toggleMobileMenu()"
+              class="lg:hidden p-2 rounded-md text-[#2D3436] hover:bg-[#F5F3EF]"
+              aria-label="Toggle navigation menu">
+        @if (mobileMenuOpen()) {
+          <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+          </svg>
+        } @else {
+          <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+          </svg>
+        }
+      </button>
+    </div>
+  </div>
+
+  <!-- Mobile Nav -->
+  @if (mobileMenuOpen()) {
+    <nav class="lg:hidden border-t border-[#E8E4DC] bg-white">
+      <div class="max-w-7xl mx-auto px-4 py-4 space-y-1">
+        @for (item of navItems; track item.name) {
+          @if (item.dropdown) {
+            <div class="space-y-1">
+              <span class="block px-3 py-2 text-sm font-medium text-[#2D3436]">{{ item.name }}</span>
+              <div class="pl-4 space-y-1">
+                @for (sub of item.dropdown; track sub.name) {
+                  <a [routerLink]="sub.route" [queryParams]="sub.params ? parseParams(sub.params) : null"
+                     (click)="closeMobileMenu()"
+                     class="block px-3 py-2 text-sm text-[#5A6B5E] hover:text-[#7C9082] hover:bg-[#F5F3EF] rounded-md">
+                    {{ sub.name }}
+                  </a>
+                }
+              </div>
+            </div>
+          } @else {
+            <a [routerLink]="item.route"
+               routerLinkActive="text-[#7C9082] bg-[#7C9082]/10 font-medium"
+               [routerLinkActiveOptions]="{exact: item.route === '/'}"
+               (click)="closeMobileMenu()"
+               class="block px-3 py-2 text-sm rounded-md text-[#2D3436] hover:text-[#7C9082] hover:bg-[#F5F3EF]">
+              {{ item.name }}
+            </a>
+          }
+        }
+      </div>
+    </nav>
+  }
+</header>
