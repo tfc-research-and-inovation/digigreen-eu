@@ -15,7 +15,8 @@
     "updated_date": "2026-04-13T13:17:08.387000",
     "created_by_id": "69731a42dc432a55387cec8e",
     "created_by": "muhammadmurtuzahussain@gmail.com",
-    "is_sample": false
+    "is_sample": false,
+    "isCoordinator": false
   },
   {
     "name": "TWIN RD",
@@ -33,7 +34,8 @@
     "updated_date": "2026-01-23T06:59:22.441000",
     "created_by_id": "69731a42dc432a55387cec8e",
     "created_by": "muhammadmurtuzahussain@gmail.com",
-    "is_sample": false
+    "is_sample": false,
+    "isCoordinator": false
   },
   {
     "name": "Greenpaths",
@@ -51,7 +53,8 @@
     "updated_date": "2026-01-23T06:59:22.441000",
     "created_by_id": "69731a42dc432a55387cec8e",
     "created_by": "muhammadmurtuzahussain@gmail.com",
-    "is_sample": false
+    "is_sample": false,
+    "isCoordinator": false
   },
   {
     "name": "FITTER-EU",
@@ -69,13 +72,14 @@
     "updated_date": "2026-01-23T06:59:22.441000",
     "created_by_id": "69731a42dc432a55387cec8e",
     "created_by": "muhammadmurtuzahussain@gmail.com",
-    "is_sample": false
+    "is_sample": false,
+    "isCoordinator": false
   },
   {
-    "name": "TFC Research & Innovation",
+    "name": "TFCENGAGE.com",
     "website": "https://tfcengage.com",
     "logo_url": null,
-    "description": "Delivery lead for FITTER-EU DigiGreenTT Group Engagement, specialising in EU-funded research coordination and stakeholder engagement.",
+    "description": "Delivery lead for FITTER-EU DigiGreenTT Cluster Engagement, specialising in EU-funded research coordination and stakeholder engagement.",
     "status": "Onboard",
     "tags": ["Research", "Policy"],
     "contact_name": null,
@@ -88,7 +92,8 @@
     "created_by_id": "69731a42dc432a55387cec8e",
     "created_by": "muhammadmurtuzahussain@gmail.com",
     "is_sample": false,
-    "featured_only": true
+    "featured_only": false,
+    "isCoordinator": true
   },
   {
     "name": "ST4TE",
@@ -106,7 +111,8 @@
     "updated_date": "2026-01-23T06:59:22.441000",
     "created_by_id": "69731a42dc432a55387cec8e",
     "created_by": "muhammadmurtuzahussain@gmail.com",
-    "is_sample": false
+    "is_sample": false,
+    "isCoordinator": false
   },
   {
     "name": "Twin Synergies",
@@ -124,7 +130,8 @@
     "updated_date": "2026-01-23T06:59:22.441000",
     "created_by_id": "69731a42dc432a55387cec8e",
     "created_by": "muhammadmurtuzahussain@gmail.com",
-    "is_sample": false
+    "is_sample": false,
+    "isCoordinator": false
   },
   {
     "name": "WISE",
@@ -142,7 +149,8 @@
     "updated_date": "2026-01-23T06:59:22.441000",
     "created_by_id": "69731a42dc432a55387cec8e",
     "created_by": "muhammadmurtuzahussain@gmail.com",
-    "is_sample": false
+    "is_sample": false,
+    "isCoordinator": false
   },
   {
     "name": "Genesys",
@@ -160,6 +168,7 @@
     "updated_date": "2026-01-23T06:59:22.441000",
     "created_by_id": "69731a42dc432a55387cec8e",
     "created_by": "muhammadmurtuzahussain@gmail.com",
-    "is_sample": false
+    "is_sample": false,
+    "isCoordinator": false
   }
 ]

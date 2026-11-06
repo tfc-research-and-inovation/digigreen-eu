@@ -1,4 +1,4 @@
-import { Component, OnInit, inject, signal } from '@angular/core';
+import {Component, OnInit, inject, signal, computed} from '@angular/core';
 import { SisterProjectsService } from '../../services/sister-projects.service';
 import { SisterProject } from '../../models';
 import { PageHeaderComponent } from '../../components/shared/page-header.component';
@@ -24,14 +24,22 @@ import { RouterLink } from '@angular/router';
           } @else if (projects().length === 0) {
             <app-empty-state title="No DigigreenTT projects yet" message="DigigreenTT project information will be added soon."/>
           } @else {
-            @if (featured().length > 0) {
+<!--            @if (featured().length > 0) {-->
+<!--              <div class="mb-12">-->
+<!--                <h2 class="text-base font-semibold text-[#2D3436] uppercase tracking-wider mb-6 pb-3 border-b-2 border-[#7C9082]">Featured Projects</h2>-->
+<!--                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">-->
+<!--                  @for (p of featured(); track p.id) { <app-project-card [project]="p"/> }-->
+<!--                </div>-->
+<!--              </div>-->
+<!--            }-->
+<!--            @if (featured().length > 0) {-->
               <div class="mb-12">
-                <h2 class="text-base font-semibold text-[#2D3436] uppercase tracking-wider mb-6 pb-3 border-b-2 border-[#7C9082]">Featured Projects</h2>
+                <h2 class="text-base font-semibold text-[#2D3436] uppercase tracking-wider mb-6 pb-3 border-b-2 border-[#7C9082]">Group Coordinator</h2>
                 <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-                  @for (p of featured(); track p.id) { <app-project-card [project]="p"/> }
+                  @for (project of isCoordinator(); track project.id) { <app-project-card [project]="project"/> }
                 </div>
               </div>
-            }
+<!--            }-->
             <div>
               <h2 class="text-base font-semibold text-[#2D3436] uppercase tracking-wider mb-6 pb-3 border-b-2 border-[#E8E4DC]">All DigigreenTT Projects</h2>
               <div class="flex gap-2 mb-6 flex-wrap">
@@ -63,15 +71,21 @@ import { RouterLink } from '@angular/router';
 })
 export class DigigreenTTProjectsComponent implements OnInit {
   private service = inject(SisterProjectsService);
+
+  readonly statuses = ['All', 'Onboard', 'Collaborator'];
+
   projects = signal<SisterProject[]>([]);
   loading = signal(true);
   filterStatus = signal('All');
-  readonly statuses = ['All', 'Onboard', 'Collaborator'];
+
   featured = () => this.projects().filter(p => p.is_featured);
+  isCoordinator = computed(() => this.projects().filter(p => p.isCoordinator));
   filteredProjects = () => {
-    const s = this.filterStatus();
-    return this.projects().filter(p => (s === 'All' || p.status === s) && !p.featured_only);
+    const status = this.filterStatus();
+    return this.projects().filter(p => (status === 'All' || p.status === status) && !p.featured_only && !p.isCoordinator);
   };
+
+
   ngOnInit() {
     this.service.getAll().subscribe(data => { this.projects.set(data); this.loading.set(false); });
   }

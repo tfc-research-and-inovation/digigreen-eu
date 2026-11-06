@@ -49,6 +49,7 @@ export interface SisterProject {
   is_featured: boolean;
   order: number;
   featured_only?: boolean;
+  isCoordinator?: boolean;
 }
 
 export interface Resource {
