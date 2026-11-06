@@ -1,98 +1,17 @@
-import { Component, signal, OnInit } from '@angular/core';
-import { RouterOutlet, RouterLink, RouterLinkActive } from '@angular/router';
+import { Component } from '@angular/core';
+import { RouterOutlet } from '@angular/router';
 import { CommonModule } from '@angular/common';
+import {Footer} from '../components/footer/footer';
+import {Header} from '../components/header/header';
 
-interface NavSubItem {
-  name: string;
-  route: string;
-  params?: string;
-}
-
-interface NavItem {
-  name: string;
-  route?: string;
-  dropdown?: NavSubItem[];
-}
 
 @Component({
   selector: 'app-layout',
   standalone: true,
-  imports: [RouterOutlet, RouterLink, RouterLinkActive, CommonModule],
+  imports: [RouterOutlet, CommonModule, Footer, Header],
   templateUrl: './layout.component.html',
 })
-export class LayoutComponent implements OnInit {
-  mobileMenuOpen = signal(false);
-  cookieConsent = signal(false);
-  openDropdown = signal<string | null>(null);
-
-  readonly navItems: NavItem[] = [
-    { name: 'Home', route: '/' },
-    { name: 'About', route: '/about' },
-    {
-      name: 'Resources',
-      dropdown: [
-        { name: 'Deliverables', route: '/resources', params: '?type=Deliverable' },
-        { name: 'Publications', route: '/resources', params: '?type=Publication' },
-        { name: 'Better Practice Guides', route: '/resources', params: '?type=Better Practice Guide' },
-        { name: 'Policy Briefs', route: '/resources', params: '?type=Policy Brief' },
-        // { name: 'Data & DMP', route: '/resources', params: '?type=Data %26 DMP' },
-      ],
-    },
-    { name: 'News', route: '/news' },
-    { name: 'Archive', route: '/archive' },
-    { name: 'DigiGreenTT Projects', route: '/digigreentt-projects' },
-    { name: 'Collaborate', route: '/collaborate' },
-    { name: 'Contact', route: '/contact' },
-  ];
-
-  ngOnInit() {
-    const consent = localStorage.getItem('digigreentt-cookie-consent');
-    this.cookieConsent.set(!!consent);
-  }
-
-  toggleMobileMenu() {
-    this.mobileMenuOpen.update(v => !v);
-  }
-
-  closeMobileMenu() {
-    this.mobileMenuOpen.set(false);
-  }
-
-  toggleDropdown(name: string) {
-    this.openDropdown.update(v => v === name ? null : name);
-  }
-
-  closeDropdown() {
-    this.openDropdown.set(null);
-  }
-
-  acceptCookies() {
-    localStorage.setItem('digigreentt-cookie-consent', 'true');
-    this.cookieConsent.set(true);
-  }
-
-  currentYear = new Date().getFullYear();
-
-  readonly resourceFooterLinks = [
-    { label: 'Deliverables', type: 'Deliverable' },
-    { label: 'Publications', type: 'Publication' },
-    { label: 'Policy Briefs', type: 'Policy Brief' },
-    { label: 'Better Practice Guides', type: 'Better Practice Guide' },
-  ];
-
-  readonly quickLinks = [
-    { label: 'About', path: '/about' },
-    { label: 'DigiGreenTT Group', path: '/digigreentt-projects' },
-    { label: 'News', path: '/news' },
-    { label: 'Collaborate', path: '/collaborate' }
-  ];
-
-  parseParams(params: string): Record<string, string> {
-    const result: Record<string, string> = {};
-    const search = new URLSearchParams(params.replace(/^\?/, ''));
-    search.forEach((v, k) => { result[k] = v; });
-    return result;
-  }
+export class LayoutComponent {
 }
 
 
