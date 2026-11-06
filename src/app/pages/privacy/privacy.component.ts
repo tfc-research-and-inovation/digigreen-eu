@@ -12,7 +12,7 @@ import { PageHeaderComponent } from '../../components/shared/page-header.compone
         <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 space-y-10 text-[#5A6B5E]">
           <div>
             <h2 class="text-xl font-semibold text-[#2D3436] mb-4">Data Controller</h2>
-            <p>TFCEngage.com, Ireland, is the data controller for this website, operated as part of the FITTER-EU project funded by the European Union (Grant Agreement No. 101132546).</p>
+            <p>TFCENGAGE.com is the data controller for this website, the website of the DigiGreenTT Group.</p>
           </div>
           <div>
             <h2 class="text-xl font-semibold text-[#2D3436] mb-4">Cookies</h2>
