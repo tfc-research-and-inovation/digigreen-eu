@@ -9,7 +9,8 @@
     "authors": " Muhammad Murtuza Hussain, Tom Flynn",
     "work_package": "",
     "deliverable_number": "",
-    "is_published": true
+    "is_published": true,
+    "belongsToProject": "ST4TE"
   },
   {
     "id": 2,
@@ -21,7 +22,8 @@
     "authors": "Alicja Bobek, Noirin MacNamara, Sara Clavero",
     "work_package": "",
     "deliverable_number": "",
-    "is_published": true
+    "is_published": true,
+    "belongsToProject": "FITTER"
   },
   {
     "id": 3,
@@ -33,7 +35,8 @@
     "authors": "Olga Kolotouchkina, Paloma Piqueiras (UCM)",
     "work_package": "",
     "deliverable_number": "",
-    "is_published": true
+    "is_published": true,
+    "belongsToProject": "FITTER"
   },
   {
     "id": 3,
@@ -45,7 +48,8 @@
     "authors": "ONóirín MacNamara, Alicja Bobek, Sara Clavero",
     "work_package": "",
     "deliverable_number": "",
-    "is_published": true
+    "is_published": true,
+    "belongsToProject": "FITTER"
   },
   {
     "id": 4,
@@ -57,7 +61,8 @@
     "authors": "Alicja Bobek, Noirin MacNamara, Silvia Sansonetti",
     "work_package": "",
     "deliverable_number": "",
-    "is_published": true
+    "is_published": true,
+    "belongsToProject": "FITTER"
   },
   {
     "id": 5,
@@ -69,7 +74,8 @@
     "authors": "Silvia Sansonetti and Roberta Cupertino (FGB)",
     "work_package": "",
     "deliverable_number": "",
-    "is_published": true
+    "is_published": true,
+    "belongsToProject": "FITTER"
   },
   {
     "id": 6,
@@ -81,7 +87,8 @@
     "authors": "Lluís Viñé, Laura Armayones",
     "work_package": "",
     "deliverable_number": "",
-    "is_published": true
+    "is_published": true,
+    "belongsToProject": "FITTER"
   },
   {
     "id": 6,
@@ -93,7 +100,8 @@
     "authors": "Laura Armayones, Lluís Viñé",
     "work_package": "",
     "deliverable_number": "",
-    "is_published": true
+    "is_published": true,
+    "belongsToProject": "FITTER"
   },
   {
     "id": 7,
@@ -105,7 +113,8 @@
     "authors": "Sara Clavero, Nóirín MacNamara, Alicja Bobek",
     "work_package": "",
     "deliverable_number": "",
-    "is_published": true
+    "is_published": true,
+    "belongsToProject": "FITTER"
   },
   {
     "id": 8,
@@ -117,7 +126,8 @@
     "authors": "Maria Sangiuliano, Oriana Salomón Balsamo",
     "work_package": "",
     "deliverable_number": "",
-    "is_published": true
+    "is_published": true,
+    "belongsToProject": "FITTER"
   },
   {
     "id": 9,
@@ -129,7 +139,8 @@
     "authors": "",
     "work_package": "",
     "deliverable_number": "",
-    "is_published": true
+    "is_published": true,
+    "belongsToProject": "FITTER"
   },
   {
     "id": 10,
@@ -141,7 +152,8 @@
     "authors": "",
     "work_package": "",
     "deliverable_number": "",
-    "is_published": true
+    "is_published": true,
+    "belongsToProject": "FITTER"
   },
   {
     "id": 11,
@@ -153,7 +165,125 @@
     "authors": "",
     "work_package": "",
     "deliverable_number": "",
-    "is_published": true
+    "is_published": true,
+    "belongsToProject": "FITTER"
+  },
+  {
+    "id": 12,
+    "title": "GreenPaths Policy Brief 7.4-FV",
+    "resource_type": "Policy Brief",
+    "description": "Making green policy also just",
+    "file_url": "https://greenpaths.info/wp-content/uploads/2025/05/Policy-Brief-7.4-FV.pdf",
+    "publish_date": "2025-04-01T06:59:22.454000",
+    "authors": "",
+    "work_package": "",
+    "deliverable_number": "",
+    "is_published": true,
+    "belongsToProject": "GreenPaths"
+  },
+  {
+    "id": 13,
+    "title": "GreenPaths Final Policy Brief 8.4-FVV",
+    "resource_type": "Policy Brief",
+    "description": "From insights to action: \n GreenPaths recommendations for policymakers and stakeholders",
+    "file_url": "https://greenpaths.info/wp-content/uploads/2026/09/GreenPaths_Policy-Brief-8.4-FVV.pdf",
+    "publish_date": "2026-09-01T06:59:22.454000",
+    "authors": "",
+    "work_package": "",
+    "deliverable_number": "",
+    "is_published": true,
+    "belongsToProject": "GreenPaths"
+  },
+  {
+    "id": 14,
+    "title": "GreenPaths Summary Report on Case Study Results D3.3",
+    "resource_type": "Deliverable",
+    "description": "",
+    "file_url": "https://greenpaths.info/wp-content/uploads/2025/11/D3.3-FINAL-VERSION-CLEAN-submitted.pdf",
+    "publish_date": "2025-10-31T06:59:22.454000",
+    "authors": "Judith Clifton, Daniel Díaz-Fuentes, Marcos Fernández-Gutiérrez and Ana\nLara Gómez (UC); Marcus Erridge, Eleonora Gea Piccardi, Mariana Riquito, Romana\nPuiulet, and Irina Velicu (CES); Ajda Pistotnik and Arne Kušej (Policy Lab); Daniel\nChavez, Hamza Hamouchene and Katie Sandwell (TNI); José María Zavala Pérez\n(INTERMON); Tatjana Avramovic, Predrag Momcilovic, Janko Stefanović, and Andrej\nIvančić (Zajedničko); Thomas Kopp and Syeda Aimen Abbas (UNIGIEßEN); Yannick\nvan den Berg and Marija Bartl (University of Amsterdam); Vedran Horvat (Institute for\nPolitical Ecology); Antonija Komazlić, Mauro Sirotnjak and Filip Pračić (PNG);\nMaurizio Mariani (Risteco)",
+    "work_package": "",
+    "deliverable_number": "",
+    "is_published": true,
+    "belongsToProject": "GreenPaths"
+  },
+  {
+    "id": 15,
+    "title": "GreenPaths Deliverable D1.1",
+    "resource_type": "Deliverable",
+    "description": "",
+    "file_url": "https://greenpaths.info/wp-content/uploads/2026/09/D1.1-Discussion-paper-and-set-of-infographics-on-the-links-between-green-transition-policy-interventions-environmental-sustainability-and-social-wellbeing.pdf",
+    "publish_date": "2024-01-31T06:59:22.454000",
+    "authors": "Judith Clifton, Daniel Díaz-Fuentes, Marcos Fernández-Gutiérrez, Ana Lara Gómez,\n(UC); Daniel Chavez (TNI;) Yannick van den Berg (UvA); Thomas Kopp and Claudius\nEngeling (USIE); Tatjana Avramović (Zajedničko); Irina Velicu and Hestia Delibas\n(CES); Ajda Pistotnik and Blaž Kosovel (Policy Lab); Jagoda Munić (Friends of the Earth\nEurope – FoEE); José María Zavala-Pérez (INTERMON), Vedran Horvat and Nikolina\nRajković (IPE), Antonija Komazlić and Mauro Sirotnjak (PNG)",
+    "work_package": "",
+    "deliverable_number": "",
+    "is_published": true,
+    "belongsToProject": "GreenPaths"
+  },
+  {
+    "id": 16,
+    "title": "GreenPaths Case study 1",
+    "resource_type": "Deliverable",
+    "description": "Lithium Mining and the 'Green Sacrificial\nLogics' of the Energy Transition in Barroso, Portugal",
+    "file_url": "https://greenpaths.info/wp-content/uploads/2026/09/D1.1-Discussion-paper-and-set-of-infographics-on-the-links-between-green-transition-policy-interventions-environmental-sustainability-and-social-wellbeing.pdf",
+    "publish_date": "2025-12-01T06:59:22.454000",
+    "authors": "Gea Piccardi (CES); Mariana Riquito (CES); Marcus Erridge (CES); Irina Velicu (CES)",
+    "work_package": "",
+    "deliverable_number": "",
+    "is_published": true,
+    "belongsToProject": "GreenPaths"
+  },
+  {
+    "id": 17,
+    "title": "GreenPaths Case study 2",
+    "resource_type": "Deliverable",
+    "description": "Europe’s Yellowstone? An analysis of the\nsocial impacts of forest conservation in Romania",
+    "file_url": "https://greenpaths.info/wp-content/uploads/2026/02/D3.4._Case-Study-2.pdf",
+    "publish_date": "2025-12-02T06:59:22.454000",
+    "authors": "Romana Puilet (RISE project); Marcus Erridge (CES); Gea Piccardi (CES); Irina Velicu\n(CES)",
+    "work_package": "",
+    "deliverable_number": "",
+    "is_published": true,
+    "belongsToProject": "GreenPaths"
+  },
+  {
+    "id": 18,
+    "title": "GreenPaths Case study 3",
+    "resource_type": "Deliverable",
+    "description": "Coal mine and thermal power plant\nclosures in the region of El Bierzo-Laciana (Spain)",
+    "file_url": "https://greenpaths.info/wp-content/uploads/2026/03/D3.4._Case-Study-3-3.pdf",
+    "publish_date": "2025-12-03T06:59:22.454000",
+    "authors": "José María Zavala Pérez (Oxfam Intermón)",
+    "work_package": "",
+    "deliverable_number": "",
+    "is_published": true,
+    "belongsToProject": "GreenPaths"
+  },
+  {
+    "id": 19,
+    "title": "GreenPaths Case study 4",
+    "resource_type": "Deliverable",
+    "description": "Assessing the impacts of the Common\nAgricultural Policy (CAP) in land use in Slovenia,\nCroatia and Serbia",
+    "file_url": "https://greenpaths.info/wp-content/uploads/2026/02/D3.4._Case-Study-4.pdf",
+    "publish_date": "2025-12-04T06:59:22.454000",
+    "authors": "Ajda Pistotnik (Policy Lab), Arne Kušej (Policy Lab)",
+    "work_package": "",
+    "deliverable_number": "",
+    "is_published": true,
+    "belongsToProject": "GreenPaths"
+  },
+  {
+    "id": 20,
+    "title": "GreenPaths Case study 5",
+    "resource_type": "Deliverable",
+    "description": "Green industrial policy and ecological\ntransformation in Latin America: A transformative\nperspective",
+    "file_url": "https://greenpaths.info/wp-content/uploads/2026/02/D3.4._Case-Study-5.pdf",
+    "publish_date": "2025-12-05T06:59:22.454000",
+    "authors": "Ajda Pistotnik (Policy Lab), Arne Kušej (Policy Lab)",
+    "work_package": "",
+    "deliverable_number": "",
+    "is_published": true,
+    "belongsToProject": "GreenPaths"
   }
 ]
 
