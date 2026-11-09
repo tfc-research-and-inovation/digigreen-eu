@@ -231,7 +231,8 @@
     "work_package": "",
     "deliverable_number": "",
     "is_published": true,
-    "belongsToProject": "GreenPaths"
+    "belongsToProject": "GreenPaths",
+    "hide_publish_day": true
   },
   {
     "id": 17,
@@ -244,7 +245,8 @@
     "work_package": "",
     "deliverable_number": "",
     "is_published": true,
-    "belongsToProject": "GreenPaths"
+    "belongsToProject": "GreenPaths",
+    "hide_publish_day": true
   },
   {
     "id": 18,
@@ -257,7 +259,8 @@
     "work_package": "",
     "deliverable_number": "",
     "is_published": true,
-    "belongsToProject": "GreenPaths"
+    "belongsToProject": "GreenPaths",
+    "hide_publish_day": true
   },
   {
     "id": 19,
@@ -270,7 +273,8 @@
     "work_package": "",
     "deliverable_number": "",
     "is_published": true,
-    "belongsToProject": "GreenPaths"
+    "belongsToProject": "GreenPaths",
+    "hide_publish_day": true
   },
   {
     "id": 20,
@@ -283,7 +287,148 @@
     "work_package": "",
     "deliverable_number": "",
     "is_published": true,
-    "belongsToProject": "GreenPaths"
+    "belongsToProject": "GreenPaths",
+    "hide_publish_day": true
+  },
+  {
+    "id": 21,
+    "title": "GreenPaths Case study 6",
+    "resource_type": "Deliverable",
+    "description": "Green industrial policy in Southeast\nAsia: Developmental states, export-oriented\nmanufacturing, and the paradox of “green”\ntransitions",
+    "file_url": "https://greenpaths.info/wp-content/uploads/2026/02/D3.4._Case-Study-6.pdf",
+    "publish_date": "2025-12-06T06:59:22.454000",
+    "authors": "Jewellord Nem Singh (University of Sussex), Daniel Chavez (TNI)",
+    "work_package": "",
+    "deliverable_number": "",
+    "is_published": true,
+    "belongsToProject": "GreenPaths",
+    "hide_publish_day": true
+  },
+  {
+    "id": 22,
+    "title": "GreenPaths Case study 7",
+    "resource_type": "Deliverable",
+    "description": "The Paradoxes of Green Industrial\nPolicy in Southern Africa",
+    "file_url": "https://greenpaths.info/wp-content/uploads/2026/02/D3.4._Case-Study-5.pdf",
+    "publish_date": "2025-12-07T06:59:22.454000",
+    "authors": "Donna Andrews (University of Cape Town), Daniel Chavez (TNI)",
+    "work_package": "",
+    "deliverable_number": "",
+    "is_published": true,
+    "belongsToProject": "GreenPaths",
+    "hide_publish_day": true
+  },
+  {
+    "id": 23,
+    "title": "GreenPaths Case study 8",
+    "resource_type": "Deliverable",
+    "description": "Green Industrial Policy in North Africa:\nBetween Energy Sovereignty, Authoritarian\nGovernance and Neocolonial Extraction",
+    "file_url": "https://greenpaths.info/wp-content/uploads/2026/04/D3.4._Case-Study-8.pdf",
+    "publish_date": "2025-12-08T06:59:22.454000",
+    "authors": "Daniel Chavez (TNI)",
+    "work_package": "",
+    "deliverable_number": "",
+    "is_published": true,
+    "belongsToProject": "GreenPaths",
+    "hide_publish_day": true
+  },
+  {
+    "id": 24,
+    "title": "GreenPaths Case study 9",
+    "resource_type": "Deliverable",
+    "description": "Climate finance and its distribution in the\nEU",
+    "file_url": "https://greenpaths.info/wp-content/uploads/2026/05/D3.4._Case-Study-9_.pdf",
+    "publish_date": "2025-12-09T06:59:22.454000",
+    "authors": "Judith Clifton (UC), Daniel Díaz - Fuentes (UC), Marcos Fernández Gutiérrez (UC),\nAna Lara Gómez (UC)",
+    "work_package": "",
+    "deliverable_number": "",
+    "is_published": true,
+    "belongsToProject": "GreenPaths",
+    "hide_publish_day": true
+  },
+  {
+    "id": 25,
+    "title": "GreenPaths Case study 10",
+    "resource_type": "Deliverable",
+    "description": "Effects of green transition policy\ninterventions on environmental sustainability and\nsocial wellbeing in EU countries and in 24 selected\ncountries in the Global South",
+    "file_url": "https://greenpaths.info/wp-content/uploads/2026/02/D3.4._Case-Study-10.pdf",
+    "publish_date": "2025-12-10T06:59:22.454000",
+    "authors": "Thomas Kopp (Justus-Liebig-University Giessen), Syeda Aimen Abbas (JustusLiebig-University Giessen)",
+    "work_package": "",
+    "deliverable_number": "",
+    "is_published": true,
+    "belongsToProject": "GreenPaths",
+    "hide_publish_day": true
+  },
+  {
+    "id": 26,
+    "title": "GreenPaths Case study 11",
+    "resource_type": "Deliverable",
+    "description": "The European Hydrogen Economy: A\nCarrier for the Green and Just Transition?",
+    "file_url": "https://greenpaths.info/wp-content/uploads/2026/02/D3.4._Case-Study-11.pdf",
+    "publish_date": "2025-12-11T06:59:22.454000",
+    "authors": "Yannick van den Berg (UvA), Aleksa Radonjić (UvA)",
+    "work_package": "",
+    "deliverable_number": "",
+    "is_published": true,
+    "belongsToProject": "GreenPaths",
+    "hide_publish_day": true
+  },
+  {
+    "id": 27,
+    "title": "GreenPaths Case study 12",
+    "resource_type": "Deliverable",
+    "description": "Mining Lithium in Serbia",
+    "file_url": "https://greenpaths.info/wp-content/uploads/2026/02/D3.4._Case-Study-12.pdf",
+    "publish_date": "2025-12-12T06:59:22.454000",
+    "authors": "Tatjana Avramović (Zajedničko), Janko Stefanović (Zajedničko), Andrej Ivančić\n(Zajedničko), Predrag Momčilović (Zajedničko)",
+    "work_package": "",
+    "deliverable_number": "",
+    "is_published": true,
+    "belongsToProject": "GreenPaths",
+    "hide_publish_day": true
+  },
+  {
+    "id": 28,
+    "title": "GreenPaths Case study 13",
+    "resource_type": "Deliverable",
+    "description": "Green transformation of tourism\nindustry – Case of Croatian urban tourist destinations",
+    "file_url": "https://greenpaths.info/wp-content/uploads/2026/02/D3.4._Case-Study-13.pdf",
+    "publish_date": "2025-12-13T06:59:22.454000",
+    "authors": "Vedran Horvat (IPE)",
+    "work_package": "",
+    "deliverable_number": "",
+    "is_published": true,
+    "belongsToProject": "GreenPaths",
+    "hide_publish_day": true
+  },
+  {
+    "id": 29,
+    "title": "GreenPaths Case study 14",
+    "resource_type": "Deliverable",
+    "description": "Energy poverty in Central and SouthEastern Europe",
+    "file_url": "https://greenpaths.info/wp-content/uploads/2026/02/D3.4._Case-Study-14.pdf",
+    "publish_date": "2025-12-14T06:59:22.454000",
+    "authors": "Antonija Komazlić (PNG), Mauro Sirotnjak (PNG), Filip Pračić (PNG)",
+    "work_package": "",
+    "deliverable_number": "",
+    "is_published": true,
+    "belongsToProject": "GreenPaths",
+    "hide_publish_day": true
+  },
+  {
+    "id": 30,
+    "title": "GreenPaths Case study 15",
+    "resource_type": "Deliverable",
+    "description": "Public food procurement as a lever to\nfoster the just and green transition – Dordogne case\nstudy",
+    "file_url": "https://greenpaths.info/wp-content/uploads/2026/02/D3.4._Case-Study-15.pdf",
+    "publish_date": "2025-12-15T06:59:22.454000",
+    "authors": "Maurizio Mariani (RISTECO), Chiara Falvo (RISTECO), Claire Marie Mariani (IUC)",
+    "work_package": "",
+    "deliverable_number": "",
+    "is_published": true,
+    "belongsToProject": "GreenPaths",
+    "hide_publish_day": true
   }
 ]
 

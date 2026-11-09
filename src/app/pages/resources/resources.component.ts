@@ -97,7 +97,7 @@ const TYPE_COLORS: Record<string, string> = {
                       }
                       <div class="flex flex-wrap items-center gap-4 text-xs text-[#7C9082]">
                         @if (r.publish_date) {
-                          <span>Published: {{ r.publish_date | date:'mediumDate' }}</span>
+                          <span>Published: {{ r.publish_date | date:(r.hide_publish_day ? 'MMM y' : 'mediumDate') }}</span>
                         }
                         @if (r.authors) {
                           <span>Authors: {{ r.authors }}</span>

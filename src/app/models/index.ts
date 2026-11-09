@@ -49,6 +49,7 @@ export interface SisterProject {
   is_featured: boolean;
   order: number;
   featured_only?: boolean;
+  belongsToProject?: string;
   isCoordinator?: boolean;
 }
 
@@ -63,5 +64,6 @@ export interface Resource {
   work_package?: string;
   deliverable_number?: string;
   is_published: boolean;
+  hide_publish_day?: boolean;
 }
 
