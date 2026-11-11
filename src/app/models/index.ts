@@ -76,3 +76,14 @@ export interface Tool {
   is_published: boolean;
   order: number;
 }
+
+export interface Organization {
+  id: string;
+  name: string;
+  website?: string | null;
+  description?: string;
+  logo_url?: string | null;
+  country?: string;
+  is_published: boolean;
+  order: number;
+}

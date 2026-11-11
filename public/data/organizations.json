@@ -1,0 +1,32 @@
+[
+  {
+    "id": "1",
+    "name": "Placeholder Organization One",
+    "website": "https://example.com/org-one",
+    "description": "Placeholder description for the first organization. Replace with real content.",
+    "logo_url": null,
+    "country": "Greece",
+    "is_published": true,
+    "order": 1
+  },
+  {
+    "id": "2",
+    "name": "Placeholder Organization Two",
+    "website": null,
+    "description": "Placeholder without a website. No link should be shown.",
+    "logo_url": null,
+    "country": "Portugal",
+    "is_published": true,
+    "order": 2
+  },
+  {
+    "id": "3",
+    "name": "Unpublished Placeholder Organization",
+    "website": "https://example.com/org-three",
+    "description": "This entry is unpublished and should not appear on the page.",
+    "logo_url": null,
+    "country": "Italy",
+    "is_published": false,
+    "order": 3
+  }
+]
