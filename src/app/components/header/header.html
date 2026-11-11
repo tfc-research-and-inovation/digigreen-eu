@@ -5,11 +5,11 @@
       <a routerLink="/" class="flex items-center gap-3">
         <!--          <span class="text-xl md:text-2xl font-semibold text-[#2D3436] tracking-tight">DigiGreenTT</span>-->
         <img src="logo.png" alt="DigiGreenTT Logo" class=" sm:inline ml-2 w-24 h-24">
-        <span class="hidden sm:inline ml-2 text-xs text-[#7C9082] font-medium uppercase tracking-wider">Twin Transition</span>
+        <span class="hidden sm:inline min-[67.5rem]:hidden xl:inline ml-2 text-xs text-[#7C9082] font-medium uppercase tracking-wider">Twin Transition</span>
       </a>
 
       <!-- Desktop Nav -->
-      <nav class="hidden lg:flex items-center gap-1">
+      <nav class="hidden min-[67.5rem]:flex items-center gap-1">
         @for (item of navItems; track item.name) {
           @if (item.dropdown) {
             <div class="relative" (mouseleave)="closeDropdown()">
@@ -47,7 +47,7 @@
 
       <!-- Mobile toggle -->
       <button (click)="toggleMobileMenu()"
-              class="lg:hidden p-2 rounded-md text-[#2D3436] hover:bg-[#F5F3EF]"
+              class="min-[67.5rem]:hidden p-2 rounded-md text-[#2D3436] hover:bg-[#F5F3EF]"
               aria-label="Toggle navigation menu">
         @if (mobileMenuOpen()) {
           <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -64,7 +64,7 @@
 
   <!-- Mobile Nav -->
   @if (mobileMenuOpen()) {
-    <nav class="lg:hidden border-t border-[#E8E4DC] bg-white">
+    <nav class="min-[67.5rem]:hidden border-t border-[#E8E4DC] bg-white">
       <div class="max-w-7xl mx-auto px-4 py-4 space-y-1">
         @for (item of navItems; track item.name) {
           @if (item.dropdown) {

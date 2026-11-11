@@ -56,7 +56,13 @@ export class Header {
     { name: 'Archive', route: '/archive' },
     { name: 'DigiGreenTT Projects', route: '/digigreentt-projects' },
     { name: 'Collaborate', route: '/collaborate' },
-    { name: 'Tools', route: '/tools' },
+    {
+      name: 'Ecosystem',
+      dropdown: [
+        { name: 'Tools', route: '/tools' },
+        { name: 'Organizations', route: '/organizations' },
+      ],
+    },
     { name: 'Contact', route: '/contact' },
   ];
 }
