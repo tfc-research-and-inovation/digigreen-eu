@@ -108,7 +108,7 @@ export class HomeComponent implements OnInit {
 
   ngOnInit() {
     this.newsService.getLatest(3).subscribe(n => this.news.set(n));
-    this.eventsService.getUpcoming(3).subscribe(e => this.events.set(e));
+    this.eventsService.getUpcoming(4).subscribe(e => this.events.set(e));
   }
 }
 
