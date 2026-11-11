@@ -37,14 +37,14 @@ Spec: `docs/SPEC-tools.md` · Plan: `tasks/plan.md`
 ## Checkpoint: Feature complete
 - [x] Build clean
 - [x] Core flow works in the browser
-- [ ] Reviewed with the user
+- [x] Reviewed with the user
 
-## Task 4: Confirm external link attributes
+## Task 4: Confirm external link attributes ✅
 **Description:** The browser tool did not report `target`/`rel` on the links, so inspect the DOM directly.
 **Acceptance:**
-- [ ] Each "Open tool →" anchor has `target="_blank"` and `rel="noopener noreferrer"` in the rendered DOM
+- [x] Each "Open tool →" anchor has `target="_blank"` and `rel="noopener noreferrer"` in the rendered DOM
 **Verification:**
-- [ ] Manual check: DevTools → inspect an anchor, or click it and confirm it opens in a new tab
+- [x] Manual check: DevTools → inspect an anchor, or click it and confirm it opens in a new tab
 **Dependencies:** Task 2 · **Files:** `src/app/pages/tools/tools.html` (only if a fix is needed) · **Scope:** XS
 
 ## Task 5: Real tools data ⛔ blocked on content
@@ -57,14 +57,14 @@ Spec: `docs/SPEC-tools.md` · Plan: `tasks/plan.md`
 - [ ] Manual check: `/tools` lists the real tools in the intended order
 **Dependencies:** Task 2 · **Files:** `public/data/tools.json` · **Scope:** XS
 
-## Task 6: Commit (on request only)
+## Task 6: Commit (on request only) ✅
 **Acceptance:**
-- [ ] One commit on `dev` that includes the tools page, model, data, route/header changes, spec, plan, `.claude/skills/` and `skills-lock.json`
-- [ ] `.claude/settings.local.json` is **not** committed
+- [x] One commit on `dev` that includes the tools page, model, data, route/header changes, spec, plan, `.claude/skills/` and `skills-lock.json`
+- [x] `.claude/settings.local.json` is **not** committed
 **Verification:**
-- [ ] `git show --stat HEAD` lists the expected files only
+- [x] `git show --stat HEAD` lists the expected files only
 **Dependencies:** Tasks 4 (and 5 if real data is ready) · **Scope:** S
 
 ## Checkpoint: Ready to ship
 - [ ] All spec success criteria met with real data
-- [ ] Committed
+- [x] Committed

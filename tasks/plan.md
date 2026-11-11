@@ -36,16 +36,16 @@ route + header nav (already in place) ──────────────
 ### Checkpoint: Feature complete
 - [x] `npm run build` clean
 - [x] `/tools` shows 2 published placeholders in order, with the unpublished one hidden (Chrome check)
-- [ ] Review with the user before proceeding
+- [x] Review with the user before proceeding
 
 ### Phase 3: Finish
-- [ ] Task 4: Confirm the external link attributes in the DOM
+- [x] Task 4: Confirm the external link attributes in the DOM
 - [ ] Task 5: Replace the placeholder data with real tools (blocked on content)
-- [ ] Task 6: Commit the work (on request)
+- [x] Task 6: Commit the work (on request)
 
 ### Checkpoint: Ready to ship
 - [ ] All spec success criteria met with real data
-- [ ] Committed on `dev`
+- [x] Committed on `dev`
 
 ## Risks and Mitigations
 | Risk | Impact | Mitigation |
