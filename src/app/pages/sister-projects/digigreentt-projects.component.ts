@@ -14,8 +14,8 @@ import { RouterLink } from '@angular/router';
   template: `
     <div>
       <app-page-header
-        title="DigigreenTT Projects"
-        subtitle="Horizon Europe projects working alongside FITTER-EU on fair, inclusive green and digital transitions."
+        title="DigiGreenTT Projects"
+        subtitle="Horizon Europe projects working together in the DigiGreenTT Cluster on fair, inclusive green and digital transitions."
         breadcrumb="DigigreenTT Projects"/>
       <section class="py-16 md:py-24">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

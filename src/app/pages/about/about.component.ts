@@ -20,23 +20,16 @@ import {RouterLink} from '@angular/router';
           <div class="space-y-4 text-[#5A6B5E] leading-relaxed mb-6">
             <p>DigiGreenTT Cluster connects Horizon Europe projects working on fair, inclusive green and digital transitions to enable cross-learning, collaboration, and joint activities and enables other stakeholders to join the cluster and participate.</p>
           </div>
+          <div class="space-y-4 text-[#5A6B5E] leading-relaxed mb-6">
+            <p>
+              Is a collaborative cluster of Horizon Europe projects, initiated, coordinated and delivered by TFCEngage.com, which owns and operates this website. Each member project retains intellectual property in its own name, materials, deliverables and tools, and grants the Cluster a licence to share them on this website for cluster purposes.
+            </p>
+          </div>
           <div class="grid lg:grid-cols-2 gap-12 lg:gap-16">
             <div>
               <h2 class="text-2xl md:text-3xl font-semibold text-[#2D3436] mb-6">Our Mission</h2>
               <div class="space-y-4 text-[#5A6B5E] leading-relaxed">
-                <p> DigiGreenTT is a cluster focused on supporting Europe's twin transition—green and
-                  digital— with an underlying philosophy to leave no one behind. Our work centres on identifying,
-                  understanding, and mitigating the social inequalities that can arise from rapid technological
-                  and environmental change.</p>
-                <p>Initiated in the FITTER-EU Horizon Europe project (Grant Agreement No. 101132546) and delivered
-                  through TFCENGAGE.com (Ireland), the DigiGreenTT Cluster brings together a
-                  series of European projects in the Twin-Transition space with a collective aim to cross-fertilize
-                  and transcend individual project experiences for the wider good of the communities served.
-                </p>
-                <p>Through the DigigreenTT Project Engagement initiative, we connect with fellow Horizon Europe
-                  projects to amplify impact, share knowledge, and collaborate on joint activities that advance
-                  fairness and inclusion across the European Research Area.\
-                </p>
+                <p> The DigiGreenTT Cluster was initiated and created by TFCEngage.com, bringing together Horizon Europe projects working on a fair and inclusive green and digital twin transition — including FITTER-EU as a member project</p>
               </div>
             </div>
             <div class="relative">
@@ -51,23 +44,7 @@ import {RouterLink} from '@angular/router';
           </div>
           <h2 class="text-2xl md:text-3xl font-semibold text-[#2D3436] mt-10 mb-6">Our Aim</h2>
           <div class="space-y-4 text-[#5A6B5E] leading-relaxed mb-6">
-            <p>DigiGreenTT is a cluster focused on supporting Europe's twin transition—green and digital— with
-              an underlying philosophy to leave no one behind, whereby everyone is equal. Our aim is to support the
-              identification, understanding and mitigation issues central to social inequalities across Europe that
-              may arise from rapid twin transitional technological and environmental changes.
-            </p>
-            <p>
-              Initiated in the FITTER-EU Horizon Europe project (Grant Agreement No. 101132546) and delivered through
-              TFC (Ireland), the DigiGreenTT cluster brings together a number of European projects that are
-              active within the Twin-Transition space. The cluster group has a collective aim to cross-fertilize
-              and transcend individual project experiences for the wider good of the societal communities that it serves.
-              It also enables stakeholders not involved in Horizon Europe projects to get involved, bringing
-              with them knowledge, experience and understanding on issues as well as ideas to strengthen the
-              effectiveness of Twin Transition delivery and research.
-            </p>
-            <p>Through the DigiGreenTT cluster engagement initiative, we connect with fellow Horizon Europe projects
-              to help amplify impact, share knowledge, and collaborate on joint activities that aim to
-              advance fairness and inclusion across Europe.
+            <p>The DigiGreenTT Cluster was initiated and created by TFCEngage.com, bringing together Horizon Europe projects working on a fair and inclusive green and digital twin transition — including FITTER-EU as a member project
             </p>
           </div>
         </div>

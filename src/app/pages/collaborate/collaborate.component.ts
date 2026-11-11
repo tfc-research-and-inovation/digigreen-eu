@@ -53,8 +53,8 @@ import { NetworkFormComponent } from '../../components/collaborate/network-form.
           @if (activeTab() === 'network') {
             <div class="bg-white rounded-xl border border-[#E8E4DC] p-6 md:p-8">
               <div class="mb-8">
-                <h2 class="text-xl font-semibold text-[#2D3436] mb-3">Apply to join the DigiGreenTT Group Network</h2>
-                <p class="text-[#5A6B5E]">Connect your Horizon Europe project with FITTER-EU and other projects working on fair, inclusive green and digital transitions.</p>
+                <h2 class="text-xl font-semibold text-[#2D3436] mb-3">Apply to join the DigiGreenTT Cluster Network</h2>
+                <p class="text-[#5A6B5E]">Connect your Horizon Europe project with the DigiGreenTT Cluster — coordinated by TFCENGAGE.com — and with other projects working on fair, inclusive green and digital transitions.</p>
               </div>
               <app-network-form/>
             </div>
