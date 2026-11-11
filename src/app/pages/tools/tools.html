@@ -1,0 +1,34 @@
+<div>
+  <app-page-header
+    title="Tools"
+    subtitle="A subtitle for tools page."
+    breadcrumb="Tools"/>
+  <section class="py-16 md:py-24">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      @if (tools.isLoading()) {
+        <app-loading-state message="Loading tools…"/>
+      } @else if (tools.error()) {
+        <app-empty-state title="Unable to load tools" message="Please try again later."/>
+      } @else if (tools.value().length === 0) {
+        <app-empty-state title="No tools yet" message="Tools will appear here."/>
+      } @else {
+        <div class="space-y-4">
+          @for (tool of tools.value(); track tool.id) {
+            <div class="bg-white rounded-xl border border-[#E8E4DC] p-6 hover:shadow-md transition-shadow flex flex-col md:flex-row md:items-center gap-4">
+              <div class="flex-1">
+                <h3 class="text-base font-semibold text-[#2D3436]">{{ tool.title }}</h3>
+                @if (tool.description) {
+                  <p class="text-sm text-[#5A6B5E] mt-1 line-clamp-2">{{ tool.description }}</p>
+                }
+              </div>
+              <a [href]="tool.url" target="_blank" rel="noopener noreferrer"
+                 class="shrink-0 text-sm font-medium text-[#7C9082] hover:text-[#5A6B5E] transition-colors">
+                Open tool →
+              </a>
+            </div>
+          }
+        </div>
+      }
+    </div>
+  </section>
+</div>

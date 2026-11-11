@@ -1,0 +1,26 @@
+[
+  {
+    "id": "1",
+    "title": "Placeholder Tool One",
+    "url": "https://example.com/tool-one",
+    "description": "Placeholder description for the first tool. Replace with real content.",
+    "is_published": true,
+    "order": 1
+  },
+  {
+    "id": "2",
+    "title": "Placeholder Tool Two",
+    "url": "https://example.com/tool-two",
+    "description": "Placeholder description for the second tool. Replace with real content.",
+    "is_published": true,
+    "order": 2
+  },
+  {
+    "id": "3",
+    "title": "Unpublished Placeholder Tool",
+    "url": "https://example.com/tool-three",
+    "description": "This entry is unpublished and should not appear on the page.",
+    "is_published": false,
+    "order": 3
+  }
+]

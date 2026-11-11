@@ -67,3 +67,12 @@ export interface Resource {
   hide_publish_day?: boolean;
 }
 
+
+export interface Tool {
+  id: string;
+  title: string;
+  url: string;
+  description?: string;
+  is_published: boolean;
+  order: number;
+}

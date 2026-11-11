@@ -38,6 +38,10 @@ export const routes: Routes = [
     loadComponent: () => import('./pages/collaborate/collaborate.component').then(m => m.CollaborateComponent),
   },
   {
+    path: 'tools',
+    loadComponent: () => import('./pages/tools/tools').then(m => m.Tools),
+  },
+  {
     path: 'contact',
     loadComponent: () => import('./pages/contact/contact.component').then(m => m.ContactComponent),
   },
