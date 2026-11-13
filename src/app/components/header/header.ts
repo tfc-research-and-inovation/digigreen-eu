@@ -60,7 +60,10 @@ export class Header {
       name: 'Ecosystem',
       dropdown: [
         { name: 'Tools', route: '/tools' },
-        { name: 'Organizations', route: '/organizations' },
+        // { name: 'Webinars', route: '/webinars' },
+        // { name: 'Videos', route: '/videos' },
+        // { name: 'Podcasts', route: '/podcasts' },
+        { name: 'Members', route: '/members' }, // maybe keep tha cards and change css
       ],
     },
     { name: 'Contact', route: '/contact' },
