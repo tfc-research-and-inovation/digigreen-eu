@@ -61,12 +61,15 @@ const TYPE_COLORS: Record<string, string> = {
                      placeholder="Search by title, author, deliverable…"
                      class="w-full pl-9 pr-3 py-2 text-sm bg-white border border-[#E8E4DC] rounded-lg text-[#2D3436] placeholder:text-[#5A6B5E]/70 focus:outline-none focus:ring-2 focus:ring-[#7C9082] focus:border-[#7C9082]"/>
             </div>
-            <div class="sm:w-56">
+            <div class="relative sm:w-56">
               <label for="resource-project" class="sr-only">Filter by project</label>
+              <svg class="pointer-events-none absolute right-3 top-1/2 -translate-y-1/2 h-4 w-4 text-[#7C9082]" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+              </svg>
               <select id="resource-project"
                       [value]="selectedProject()"
                       (change)="setProject($any($event.target).value)"
-                      class="w-full px-3 py-2 text-sm bg-white border border-[#E8E4DC] rounded-lg text-[#2D3436] focus:outline-none focus:ring-2 focus:ring-[#7C9082] focus:border-[#7C9082]">
+                      class="w-full appearance-none pl-3 pr-9 py-2 text-sm bg-white border border-[#E8E4DC] rounded-lg text-[#2D3436] focus:outline-none focus:ring-2 focus:ring-[#7C9082] focus:border-[#7C9082]">
                 <option value="all">All projects</option>
                 @for (project of projects(); track project) {
                   <option [value]="project" [selected]="project === selectedProject()">{{ project }}</option>
