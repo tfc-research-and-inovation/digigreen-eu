@@ -1,5 +1,5 @@
 import {Component, OnInit, inject, signal, computed} from '@angular/core';
-import {ActivatedRoute} from '@angular/router';
+import {ActivatedRoute, Params, Router} from '@angular/router';
 import {DatePipe} from '@angular/common';
 import {ResourcesService} from '../../services/resources.service';
 import {Resource} from '../../models';
@@ -48,14 +48,30 @@ const TYPE_COLORS: Record<string, string> = {
             </a>
           </div>
 
+          <!-- Project filter -->
+          <div class="flex flex-col sm:flex-row gap-3 mb-4">
+            <div class="sm:w-56">
+              <label for="resource-project" class="sr-only">Filter by project</label>
+              <select id="resource-project"
+                      [value]="selectedProject()"
+                      (change)="setProject($any($event.target).value)"
+                      class="w-full px-3 py-2 text-sm bg-white border border-[#E8E4DC] rounded-lg text-[#2D3436] focus:outline-none focus:ring-2 focus:ring-[#7C9082] focus:border-[#7C9082]">
+                <option value="all">All projects</option>
+                @for (project of projects(); track project) {
+                  <option [value]="project" [selected]="project === selectedProject()">{{ project }}</option>
+                }
+              </select>
+            </div>
+          </div>
+
           <!-- Filter buttons -->
           <div class="flex gap-2 flex-wrap mb-8">
-            <button (click)="selectedType.set('all')"
+            <button (click)="setType('all')"
                     [class]="selectedType()==='all' ? 'bg-[#7C9082] text-white' : 'border border-[#E8E4DC] text-[#5A6B5E] hover:border-[#7C9082]'"
                     class="px-3 py-1.5 text-sm rounded-lg transition-colors">All Resources
             </button>
             @for (type of resourceTypes; track type) {
-              <button (click)="selectedType.set(type)"
+              <button (click)="setType(type)"
                       [class]="selectedType()===type ? 'bg-[#7C9082] text-white' : 'border border-[#E8E4DC] text-[#5A6B5E] hover:border-[#7C9082]'"
                       class="px-3 py-1.5 text-sm rounded-lg transition-colors">{{ type }}
               </button>
@@ -128,26 +144,52 @@ const TYPE_COLORS: Record<string, string> = {
 })
 export class ResourcesComponent implements OnInit {
   private route = inject(ActivatedRoute);
+  private router = inject(Router);
   private service = inject(ResourcesService);
 
   all = signal<Resource[]>([]);
   loading = signal(true);
   selectedType = signal('all');
+  selectedProject = signal('all');
   readonly resourceTypes = RESOURCE_TYPES;
+
+  projects = computed(() =>
+    [...new Set(this.all().map(r => r.belongsToProject).filter((p): p is string => !!p))].sort()
+  );
 
   filtered = computed(() => {
     const type = this.selectedType();
-    return type === 'all' ? this.all() : this.all().filter(resource => resource.resource_type === type);
+    const project = this.selectedProject();
+    return this.all().filter(r =>
+      (type === 'all' || r.resource_type === type) &&
+      (project === 'all' || r.belongsToProject === project)
+    );
   });
 
   typeColor(type: string): string {
     return TYPE_COLORS[type] ?? 'bg-gray-100 text-gray-800';
   }
 
+  setType(type: string) {
+    this.selectedType.set(type);
+    this.updateUrl({type: type === 'all' ? null : type});
+  }
+
+  setProject(project: string) {
+    this.selectedProject.set(project);
+    this.updateUrl({project: project === 'all' ? null : project});
+  }
+
+  /** The URL is the source of truth; default values are passed as null so they are dropped. */
+  private updateUrl(queryParams: Params) {
+    this.router.navigate([], {relativeTo: this.route, queryParams, queryParamsHandling: 'merge', replaceUrl: true});
+  }
+
   ngOnInit() {
     this.route.queryParams.subscribe(params => {
       const type = params['type'];
-      if (type && RESOURCE_TYPES.includes(type)) this.selectedType.set(type);
+      this.selectedType.set(type && RESOURCE_TYPES.includes(type) ? type : 'all');
+      this.selectedProject.set(params['project'] || 'all');
     });
     this.service.getAll().subscribe(data => {
       this.all.set(data);
