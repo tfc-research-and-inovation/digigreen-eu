@@ -56,16 +56,16 @@ export class Header {
     { name: 'Archive', route: '/archive' },
     { name: 'DigiGreenTT Projects', route: '/digigreentt-projects' },
     { name: 'Collaborate', route: '/collaborate' },
-    {
-      name: 'Ecosystem',
-      dropdown: [
-        { name: 'Tools', route: '/tools' },
-        // { name: 'Webinars', route: '/webinars' },
-        // { name: 'Videos', route: '/videos' },
-        // { name: 'Podcasts', route: '/podcasts' },
-        { name: 'Members', route: '/members' }, // maybe keep tha cards and change css
-      ],
-    },
+    // {
+    //   name: 'Ecosystem',
+    //   dropdown: [
+    //     { name: 'Tools', route: '/tools' },
+    //     { name: 'Webinars', route: '/webinars' },
+    //     { name: 'Videos', route: '/videos' },
+    //     { name: 'Podcasts', route: '/podcasts' },
+    //     { name: 'Members', route: '/members' }, // maybe keep tha cards and change css
+    //   ],
+    // },
     { name: 'Contact', route: '/contact' },
   ];
 }
