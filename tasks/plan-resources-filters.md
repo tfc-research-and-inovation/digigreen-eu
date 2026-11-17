@@ -40,7 +40,7 @@ Resource.belongsToProject (model)
 - [x] `npm run build` succeeds; choosing FITTER shows 12 items; `?project=FITTER&type=Deliverable` works on reload; the header "Deliverables" link still works
 
 ### Phase 2: Search
-- [ ] Task 2: Search input with `q` query param (S)
+- [x] Task 2: Search input with `q` query param (S)
 
 ### Phase 3: Polish
 - [ ] Task 3: Result count, Clear filters, no-match state and project badge (S)

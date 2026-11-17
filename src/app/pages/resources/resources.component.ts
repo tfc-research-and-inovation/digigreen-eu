@@ -48,8 +48,19 @@ const TYPE_COLORS: Record<string, string> = {
             </a>
           </div>
 
-          <!-- Project filter -->
+          <!-- Search + project filter -->
           <div class="flex flex-col sm:flex-row gap-3 mb-4">
+            <div class="relative flex-1">
+              <label for="resource-search" class="sr-only">Search resources</label>
+              <svg class="pointer-events-none absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-[#7C9082]" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-4.35-4.35M17 11a6 6 0 11-12 0 6 6 0 0112 0z"/>
+              </svg>
+              <input id="resource-search" type="search"
+                     [value]="searchTerm()"
+                     (input)="setSearch($any($event.target).value)"
+                     placeholder="Search by title, author, deliverable…"
+                     class="w-full pl-9 pr-3 py-2 text-sm bg-white border border-[#E8E4DC] rounded-lg text-[#2D3436] placeholder:text-[#5A6B5E]/70 focus:outline-none focus:ring-2 focus:ring-[#7C9082] focus:border-[#7C9082]"/>
+            </div>
             <div class="sm:w-56">
               <label for="resource-project" class="sr-only">Filter by project</label>
               <select id="resource-project"
@@ -151,6 +162,7 @@ export class ResourcesComponent implements OnInit {
   loading = signal(true);
   selectedType = signal('all');
   selectedProject = signal('all');
+  searchTerm = signal('');
   readonly resourceTypes = RESOURCE_TYPES;
 
   projects = computed(() =>
@@ -160,9 +172,12 @@ export class ResourcesComponent implements OnInit {
   filtered = computed(() => {
     const type = this.selectedType();
     const project = this.selectedProject();
+    const q = this.searchTerm().trim().toLowerCase();
     return this.all().filter(r =>
       (type === 'all' || r.resource_type === type) &&
-      (project === 'all' || r.belongsToProject === project)
+      (project === 'all' || r.belongsToProject === project) &&
+      (!q || [r.title, r.description, r.authors, r.deliverable_number]
+        .some(f => f?.toLowerCase().includes(q)))
     );
   });
 
@@ -180,6 +195,11 @@ export class ResourcesComponent implements OnInit {
     this.updateUrl({project: project === 'all' ? null : project});
   }
 
+  setSearch(term: string) {
+    this.searchTerm.set(term);
+    this.updateUrl({q: term.trim() ? term : null});
+  }
+
   /** The URL is the source of truth; default values are passed as null so they are dropped. */
   private updateUrl(queryParams: Params) {
     this.router.navigate([], {relativeTo: this.route, queryParams, queryParamsHandling: 'merge', replaceUrl: true});
@@ -190,6 +210,7 @@ export class ResourcesComponent implements OnInit {
       const type = params['type'];
       this.selectedType.set(type && RESOURCE_TYPES.includes(type) ? type : 'all');
       this.selectedProject.set(params['project'] || 'all');
+      this.searchTerm.set(params['q'] ?? '');
     });
     this.service.getAll().subscribe(data => {
       this.all.set(data);

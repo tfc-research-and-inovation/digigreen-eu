@@ -19,17 +19,17 @@ shows the no-match state; it doesn't fall back to `'all'`).
 ## Checkpoint A
 - [x] Build passes, the project filter works end-to-end, and the `?type=` links are not broken
 
-## Task 2: Search input with `q` query param
+## Task 2: Search input with `q` query param ✅
 **Description:** Add a labelled `<input type="search">` that filters title, description, authors and deliverable number,
 ignoring case, as the visitor types. It is stored as `q` in the URL. On mobile it stacks with the dropdown; from `sm:`
 up they sit in one row.
 **Acceptance:**
-- [ ] "kakderi" and "KAKDERI" both show only the ST4TE publication
-- [ ] The search combines with project and type; `?q=...` survives a reload; an empty search removes `q` from the URL
-- [ ] The input has an accessible label (it can be `sr-only`) and a visible focus ring in `#7C9082`
+- [x] "kakderi" and "KAKDERI" both show only the ST4TE publication
+- [x] The search combines with project and type; `?q=...` survives a reload; an empty search removes `q` from the URL
+- [x] The input has an accessible label (it can be `sr-only`) and a visible focus ring in `#7C9082`
 **Verification:**
-- [ ] Build succeeds: `npm run build`
-- [ ] Manual check in the browser, including at about 400px width
+- [x] Build succeeds: `npm run build`
+- [x] Manual check in the browser, including at about 400px width
 **Dependencies:** Task 1 · **Files:** `src/app/pages/resources/resources.component.ts` · **Scope:** S
 
 ## Task 3: Result count, Clear filters, no-match state and project badge
