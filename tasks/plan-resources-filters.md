@@ -43,12 +43,12 @@ Resource.belongsToProject (model)
 - [x] Task 2: Search input with `q` query param (S)
 
 ### Phase 3: Polish
-- [ ] Task 3: Result count, Clear filters, no-match state and project badge (S)
+- [x] Task 3: Result count, Clear filters, no-match state and project badge (S)
 
 ### Checkpoint B: Complete
-- [ ] All 10 spec Success Criteria are checked in the browser (including at about 400px width and with the keyboard)
-- [ ] `npm run build` succeeds with no new warnings
-- [ ] Review with the user before committing
+- [x] All 10 spec Success Criteria are checked in the browser (including at about 400px width and with the keyboard)
+- [x] `npm run build` succeeds with no new warnings
+- [x] Review with the user before committing
 
 ## Risks and Mitigations
 | Risk | Impact | Mitigation |

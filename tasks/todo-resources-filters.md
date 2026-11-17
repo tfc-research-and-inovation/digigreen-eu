@@ -32,20 +32,20 @@ up they sit in one row.
 - [x] Manual check in the browser, including at about 400px width
 **Dependencies:** Task 1 · **Files:** `src/app/pages/resources/resources.component.ts` · **Scope:** S
 
-## Task 3: Result count, Clear filters, no-match state and project badge
+## Task 3: Result count, Clear filters, no-match state and project badge ✅
 **Description:** Add "Showing X of Y resources", a Clear filters button shown only when `hasActiveFilters()`, a separate
 "No matching resources" empty state (with Clear filters) when data exists but nothing matches, and a neutral project
 badge in the card's badge row.
 **Acceptance:**
-- [ ] The count is correct for every combination; Clear filters resets all three filters and clears the query string
-- [ ] No matches → "No matching resources" + a Clear filters button; no data at all → the existing "No resources available yet"
-- [ ] Each card shows its project badge, in the same style as the deliverable badge
+- [x] The count is correct for every combination; Clear filters resets all three filters and clears the query string
+- [x] No matches → "No matching resources" + a Clear filters button; no data at all → the existing "No resources available yet"
+- [x] Each card shows its project badge, in the same style as the deliverable badge
 **Verification:**
-- [ ] Build succeeds: `npm run build`
-- [ ] Manual check in the browser: keyboard-only pass through search → select → type buttons → Clear filters
+- [x] Build succeeds: `npm run build`
+- [x] Manual check in the browser: keyboard-only pass through search → select → type buttons → Clear filters
 **Dependencies:** Task 2 · **Files:** `src/app/pages/resources/resources.component.ts` · **Scope:** S
 
 ## Checkpoint B: Complete
-- [ ] All 10 Success Criteria in the spec are checked
-- [ ] `npm run build` succeeds with no new warnings
-- [ ] Review with the user before committing
+- [x] All 10 Success Criteria in the spec are checked
+- [x] `npm run build` succeeds with no new warnings
+- [x] Review with the user before committing

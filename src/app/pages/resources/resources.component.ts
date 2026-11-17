@@ -76,7 +76,7 @@ const TYPE_COLORS: Record<string, string> = {
           </div>
 
           <!-- Filter buttons -->
-          <div class="flex gap-2 flex-wrap mb-8">
+          <div class="flex gap-2 flex-wrap mb-4">
             <button (click)="setType('all')"
                     [class]="selectedType()==='all' ? 'bg-[#7C9082] text-white' : 'border border-[#E8E4DC] text-[#5A6B5E] hover:border-[#7C9082]'"
                     class="px-3 py-1.5 text-sm rounded-lg transition-colors">All Resources
@@ -88,11 +88,34 @@ const TYPE_COLORS: Record<string, string> = {
               </button>
             }
           </div>
+
+          <!-- Result count + clear -->
+          @if (!loading() && all().length > 0) {
+            <div class="flex items-center justify-between gap-4 mb-6 min-h-8 text-sm text-[#5A6B5E]">
+              <p aria-live="polite">Showing {{ filtered().length }} of {{ all().length }} resources</p>
+              @if (hasActiveFilters()) {
+                <button type="button" (click)="clearFilters()"
+                        class="px-2 py-1 rounded-lg text-[#7C9082] hover:text-[#2D3436] underline-offset-2 hover:underline focus:outline-none focus-visible:ring-2 focus-visible:ring-[#7C9082]">
+                  Clear filters
+                </button>
+              }
+            </div>
+          }
+
           @if (loading()) {
             <app-loading-state message="Loading resources…"/>
-          } @else if (filtered().length === 0) {
+          } @else if (all().length === 0) {
             <app-empty-state title="No resources available yet"
                              message="Resources will be added as the project progresses."/>
+          } @else if (filtered().length === 0) {
+            <app-empty-state title="No matching resources"
+                             message="Try a different search or clear the filters."/>
+            <div class="flex justify-center -mt-16">
+              <button type="button" (click)="clearFilters()"
+                      class="px-4 py-2 bg-[#7C9082] hover:bg-[#6f8275] text-white rounded-lg text-sm font-medium transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-[#7C9082]">
+                Clear filters
+              </button>
+            </div>
           } @else {
             <div class="space-y-4">
               @for (r of filtered(); track r.id) {
@@ -109,6 +132,10 @@ const TYPE_COLORS: Record<string, string> = {
                         <span [class]="typeColor(r.resource_type)" class="px-2 py-0.5 text-xs rounded-full font-medium">
                           {{ r.resource_type }}
                         </span>
+                        @if (r.belongsToProject) {
+                          <span
+                            class="px-2 py-0.5 text-xs border border-[#E8E4DC] rounded-full text-[#5A6B5E]">{{ r.belongsToProject }}</span>
+                        }
                         @if (r.deliverable_number) {
                           <span
                             class="px-2 py-0.5 text-xs border border-[#E8E4DC] rounded-full text-[#5A6B5E]">{{ r.deliverable_number }}</span>
@@ -193,6 +220,17 @@ export class ResourcesComponent implements OnInit {
   setProject(project: string) {
     this.selectedProject.set(project);
     this.updateUrl({project: project === 'all' ? null : project});
+  }
+
+  hasActiveFilters = computed(() =>
+    this.selectedType() !== 'all' || this.selectedProject() !== 'all' || this.searchTerm().trim() !== ''
+  );
+
+  clearFilters() {
+    this.selectedType.set('all');
+    this.selectedProject.set('all');
+    this.searchTerm.set('');
+    this.updateUrl({type: null, project: null, q: null});
   }
 
   setSearch(term: string) {
