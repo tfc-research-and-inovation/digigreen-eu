@@ -1,4 +1,4 @@
-import { Component, OnInit, inject, signal } from '@angular/core';
+import {Component, OnInit, inject, signal, computed} from '@angular/core';
 import { PartnersService } from '../../services/partners.service';
 import { Partner } from '../../models';
 import { PageHeaderComponent } from '../../components/shared/page-header.component';
@@ -55,19 +55,19 @@ import { EmptyStateComponent } from '../../components/shared/empty-state.compone
   `,
 })
 export class MembersComponent implements OnInit {
-  private service = inject(PartnersService);
+  private partnersService = inject(PartnersService);
 
   partners = signal<Partner[]>([]);
   loading = signal(true);
 
-  coordinator = () => this.partners().find(p => p.is_coordinator);
-  beneficiaries = () => this.partners().filter(p => !p.is_coordinator);
+  coordinator = computed(() => this.partners().find(p => p.is_coordinator));
+  beneficiaries = computed(() => this.partners().filter(p => !p.is_coordinator));
+
 
   ngOnInit() {
-    this.service.getAll().subscribe(data => {
+    this.partnersService.getAll().subscribe(data => {
       this.partners.set(data);
       this.loading.set(false);
     });
   }
 }
-

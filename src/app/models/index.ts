@@ -1,3 +1,5 @@
+import {Tables} from '../types/database.types';
+
 export interface Event {
   id: number;
   title: string;
@@ -24,17 +26,18 @@ export interface NewsItem {
   is_published: boolean;
 }
 
-export interface Partner {
-  id: string;
-  name: string;
-  acronym: string;
-  country: string;
-  logo_url?: string;
-  website?: string;
-  is_coordinator: boolean;
-  description?: string;
-  order: number;
-}
+export type Partner = Tables<'partners'>;
+// export interface Partner {
+//   id: string;
+//   name: string;
+//   acronym: string;
+//   country: string;
+//   logo_url?: string;
+//   website?: string;
+//   is_coordinator: boolean;
+//   description?: string;
+//   order: number;
+// }
 
 export interface SisterProject {
   id: string;
