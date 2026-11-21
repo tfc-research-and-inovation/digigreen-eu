@@ -29,7 +29,15 @@ import {RouterLink} from '@angular/router';
             <div>
               <h2 class="text-2xl md:text-3xl font-semibold text-[#2D3436] mb-6">Our Mission</h2>
               <div class="space-y-4 text-[#5A6B5E] leading-relaxed">
-                <p> The DigiGreenTT Cluster was initiated and created by TFCEngage.com, bringing together Horizon Europe projects working on a fair and inclusive green and digital twin transition — including FITTER-EU as a member project</p>
+                <p>
+                  Promote collaboration, knowledge sharing, synergies and activities among European research projects and relevant communities that reside within the twin transition (green and digital) space.
+                </p>
+                <p>
+                  Operating under the auspices of TFCENGAGE.com, the cluster comprises  leading social scientists and  technologists, researchers, policy makers, carers and service providers working to support vulnerable and disadvantage groups.
+                </p>
+                <p>
+                  The cluster supports members through a knowledge sharing and engagement hub for the greater delivery of high-quality research and likewise, it provides space for the encouragement and manifestation of effective cross fertilization interactivity, knowledge, exchanges and synergies for projects and organisations.
+                </p>
               </div>
             </div>
             <div class="relative">
@@ -44,7 +52,11 @@ import {RouterLink} from '@angular/router';
           </div>
           <h2 class="text-2xl md:text-3xl font-semibold text-[#2D3436] mt-10 mb-6">Our Aim</h2>
           <div class="space-y-4 text-[#5A6B5E] leading-relaxed mb-6">
-            <p>The DigiGreenTT Cluster was initiated and created by TFCEngage.com, bringing together Horizon Europe projects working on a fair and inclusive green and digital twin transition — including FITTER-EU as a member project
+            <p>
+              Collective aim is to cross-fertilize and transcend individual project and organisation experiences and disseminate knowledge for the wider good of projects and societal outcome, identifying potential synergies, providing a hub for lessons learnt from activities centred around the twin transition.
+            </p>
+            <p>
+              The cluster amplifies the impact of its members with the view to enable, research science and technology to remain a key driver of innovation and societal progress on the whole.
             </p>
           </div>
         </div>
