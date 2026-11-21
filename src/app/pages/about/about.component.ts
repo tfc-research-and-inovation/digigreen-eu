@@ -18,26 +18,31 @@ import {RouterLink} from '@angular/router';
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 class="text-2xl md:text-3xl font-semibold text-[#2D3436] mb-6">What is the DigiGreenTT Cluster Engagement</h2>
           <div class="space-y-4 text-[#5A6B5E] leading-relaxed mb-6">
-            <p>DigiGreenTT Cluster connects Horizon Europe projects working on fair, inclusive green and digital transitions to enable cross-learning, collaboration, and joint activities and enables other stakeholders to join the cluster and participate.</p>
-          </div>
-          <div class="space-y-4 text-[#5A6B5E] leading-relaxed mb-6">
             <p>
-              Is a collaborative cluster of Horizon Europe projects, initiated, coordinated and delivered by TFCEngage.com, which owns and operates this website. Each member project retains intellectual property in its own name, materials, deliverables and tools, and grants the Cluster a licence to share them on this website for cluster purposes.
+
+              DigiGreenTT Cluster connects Horizon Europe projects and stakeholders working on fair, inclusive
+              green and digital transitions to engage, enabling cross-learning, collaboration, knowledge exchange
+              and joint activities to be realised and encourages other stakeholders in the twin transition space to
+              join the cluster and participate.
+            </p>
+            <p>
+              The Cluster comprises of a collaborative group of Horizon Europe projects, initiated, coordinated and
+              delivered by TFCENGAGE.com, which owns and operates this hub space website. Each member project
+              retains intellectual property in its own name, materials, deliverables and tools, and grants the Cluster
+              the right to share them on this website for cluster purposes.
             </p>
           </div>
           <div class="grid lg:grid-cols-2 gap-12 lg:gap-16">
-            <div>
-              <h2 class="text-2xl md:text-3xl font-semibold text-[#2D3436] mb-6">Our Mission</h2>
+            <div class="flex flex-col justify-center">
+              <h2 class="text-2xl md:text-3xl font-semibold text-[#2D3436] mb-6">Cluster Mission</h2>
               <div class="space-y-4 text-[#5A6B5E] leading-relaxed">
                 <p>
-                  Promote collaboration, knowledge sharing, synergies and activities among European research projects and relevant communities that reside within the twin transition (green and digital) space.
+                  To provide researchers and stakeholders operating in the twin transition space with an active
+                  dynamic engaging and collaborative hub space to build cohesion and provide a means to develop
+                  forward focused ideas setting the groundwork for cooperations and the realisation of effective
+                  solution and practices into the future.
                 </p>
-                <p>
-                  Operating under the auspices of TFCENGAGE.com, the cluster comprises  leading social scientists and  technologists, researchers, policy makers, carers and service providers working to support vulnerable and disadvantage groups.
-                </p>
-                <p>
-                  The cluster supports members through a knowledge sharing and engagement hub for the greater delivery of high-quality research and likewise, it provides space for the encouragement and manifestation of effective cross fertilization interactivity, knowledge, exchanges and synergies for projects and organisations.
-                </p>
+
               </div>
             </div>
             <div class="relative">
@@ -50,13 +55,22 @@ import {RouterLink} from '@angular/router';
               </div>
             </div>
           </div>
-          <h2 class="text-2xl md:text-3xl font-semibold text-[#2D3436] mt-10 mb-6">Our Aim</h2>
+          <h2 class="text-2xl md:text-3xl font-semibold text-[#2D3436] mt-10 mb-6">Aim</h2>
           <div class="space-y-4 text-[#5A6B5E] leading-relaxed mb-6">
             <p>
-              Collective aim is to cross-fertilize and transcend individual project and organisation experiences and disseminate knowledge for the wider good of projects and societal outcome, identifying potential synergies, providing a hub for lessons learnt from activities centred around the twin transition.
+              The Cluster aims to provide an active dynamic engaging and collaborative hub space for research and
+              innovation and stakeholders involved in the twin-transition, facilitating and cross-fertilizing
+              knowledge across projects and stakeholder organisations, sharing experiences, promoting
+              collaboration and synergies.
             </p>
+          </div>
+          <h2 class="text-2xl md:text-3xl font-semibold text-[#2D3436] mt-10 mb-6">Members</h2>
+          <div class="space-y-4 text-[#5A6B5E] leading-relaxed mb-6">
             <p>
-              The cluster amplifies the impact of its members with the view to enable, research science and technology to remain a key driver of innovation and societal progress on the whole.
+              The Cluster and hub space website collectively act as a bridge maker between research and
+              innovation and stakeholders involved the twin transition. Members include social scientists,
+              technologists, researchers, educators, private companies and public authorities, policy makers,
+              clinical, carers, NGOs and societal service providers.
             </p>
           </div>
         </div>
