@@ -68,6 +68,7 @@ export interface Resource {
   deliverable_number?: string;
   is_published: boolean;
   hide_publish_day?: boolean;
+  belongsToProject?: string;
 }
 
 
