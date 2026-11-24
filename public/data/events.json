@@ -75,7 +75,7 @@
     "location": "Online",
     "event_type": "Conference",
     "registration_url": null,
-    "is_upcoming": true,
+    "is_upcoming": false,
     "id": 5,
     "created_date": "2026-11-4T06:59:22.457000",
     "updated_date": "2026-11-4T06:59:22.457000",

@@ -10,8 +10,8 @@
       "Network",
       "Partnerships"
     ],
-    "is_archived": true,
-    "is_published": true,
+    "is_archived": false,
+    "is_published": false,
     "id": "69731c4aba95732f90893ca4",
     "created_date": "2026-01-23T06:59:22.455000",
     "updated_date": "2026-01-23T06:59:22.455000",
@@ -30,8 +30,8 @@
       "Announcement",
       "Collaboration"
     ],
-    "is_archived": true,
-    "is_published": true,
+    "is_archived": false,
+    "is_published": false,
     "id": "69731c4aba95732f90893ca2",
     "created_date": "2026-01-23T06:59:22.454000",
     "updated_date": "2026-04-14T10:42:24.411000",
