@@ -70,7 +70,7 @@ grep -rn "\.order\b\|isCoordinator\|belongsToProject" src/app
 | `EventsService` (`/data/events.json`) | `events` | `getUpcoming`: `.eq('is_upcoming', true).order('event_date')`, `.limit(count)` |
 | `NewsService` (`/data/news.json`) | `news` | `getPublished`: `.eq('is_archived', false).order('publish_date', { ascending: false })`; `getArchived`: `.eq('is_archived', true)`; `getById`: `.eq('id', id).maybeSingle()` |
 | `PartnersService` | `partners` | `.order('sort_order')` |
-| `SisterProjectsService` | `sister_projects` | `.order('sort_order')` |
+| `SisterProjectsService` | `projects` | `.order('sort_order')` |
 | `ResourcesService` | `resources` | `.order('publish_date', { ascending: false, nullsFirst: false })`; `getByType`: `.eq('resource_type', type)` |
 | `pages/tools/tools.ts` (`httpResource` → `/data/tools.json`) | `tools` | `.order('sort_order')` |
 | `pages/organizations/organizations.ts` (`httpResource` → `/data/organizations.json`) | `organizations` | `.order('sort_order')` |

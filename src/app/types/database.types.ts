@@ -93,7 +93,7 @@ export type Database = {
                   Relationships: [
                     
                   ]
-                },"sister_projects": {
+                },"projects": {
                   Row: {
                     "belongs_to_project": string | null,"contact_email": string | null,"contact_name": string | null,"created_at": string,"description": string,"featured_only": boolean,"id": string,"is_coordinator": boolean,"is_featured": boolean,"logo_url": string | null,"name": string,"sort_order": number,"status": string,"tags": (string)[],"updated_at": string,"website": string | null
                   }
