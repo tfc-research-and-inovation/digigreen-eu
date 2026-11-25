@@ -1,6 +1,8 @@
-import { Component, inject, signal } from '@angular/core';
+import { Component, inject, signal, ViewEncapsulation } from '@angular/core';
 import { ActivatedRoute, Router, RouterLink } from '@angular/router';
 import { form, FormField } from '@angular/forms/signals';
+import { QuillEditorFieldComponent } from 'ngx-quill';
+import type Quill from 'quill';
 import { AdminDataService } from '../admin-data.service';
 import { toModel, toPatch } from '../form-utils';
 
@@ -9,7 +11,10 @@ const ARRAYS = ['tags'];
 
 @Component({
   selector: 'app-admin-news-edit',
-  imports: [FormField, RouterLink],
+  imports: [FormField, RouterLink, QuillEditorFieldComponent],
+  // Quill's own CSS, loaded only here (not in the public bundle). Unscoped so it reaches the editor DOM.
+  styleUrl: '../../../../node_modules/quill/dist/quill.snow.css',
+  encapsulation: ViewEncapsulation.None,
   template: `
     <h1 class="text-2xl font-semibold text-[#2D3436] mb-6">Edit news</h1>
 
@@ -22,10 +27,18 @@ const ARRAYS = ['tags'];
         <span class="text-sm text-gray-600">excerpt</span>
         <textarea [formField]="f.excerpt" rows="3" class="mt-1 w-full border rounded px-3 py-2"></textarea>
       </label>
-      <label class="block">
+      <div class="block">
         <span class="text-sm text-gray-600">content</span>
-        <textarea [formField]="f.content" rows="12" class="mt-1 w-full border rounded px-3 py-2"></textarea>
-      </label>
+        <quill-editor-field
+          [formField]="f.content"
+          format="html"
+          defaultEmptyValue=""
+          [modules]="modules"
+          [formats]="formats"
+          [valueGetter]="getHtml"
+          class="mt-1 block"
+        />
+      </div>
       <label class="block">
         <span class="text-sm text-gray-600">image_url</span>
         <input [formField]="f.image_url" class="mt-1 w-full border rounded px-3 py-2" />
@@ -75,6 +88,21 @@ export class AdminNewsEdit {
     is_published: false,
   });
   protected readonly f = form(this.model);
+
+  // Limited toolbar: only formats the public news page can render without Quill's CSS.
+  protected readonly modules = {
+    toolbar: [
+      [{ header: 2 }, { header: 3 }],
+      ['bold', 'italic'],
+      [{ list: 'ordered' }, { list: 'bullet' }],
+      ['link', 'blockquote'],
+      ['clean'],
+    ],
+  };
+  // Same list also applies to pasted text, so no other formatting gets in.
+  protected readonly formats = ['header', 'bold', 'italic', 'list', 'link', 'blockquote'];
+  // Quill 2's getSemanticHTML() turns every space into &nbsp;, which breaks line wrapping on the public page.
+  protected readonly getHtml = (quill: Quill) => quill.getSemanticHTML().replaceAll('&nbsp;', ' ');
 
   constructor() {
     this.admin.getById('news', this.id).subscribe(row => this.model.set(toModel(row, this.model())));
