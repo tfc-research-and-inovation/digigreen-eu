@@ -1,13 +1,17 @@
 import { Component, computed, inject, signal } from '@angular/core';
 import { rxResource } from '@angular/core/rxjs-interop';
 import { RouterLink } from '@angular/router';
+import { AddButton } from '../shared/add-button';
 import { AdminDataService, PAGE_SIZE } from '../admin-data.service';
 
 @Component({
   selector: 'app-admin-projects',
-  imports: [RouterLink],
+  imports: [RouterLink, AddButton],
   template: `
-    <h1 class="text-2xl font-semibold text-[#2D3436] mb-6">Projects</h1>
+    <div class="flex items-center justify-between mb-6">
+      <h1 class="text-2xl font-semibold text-[#2D3436]">Projects</h1>
+      <app-add-button />
+    </div>
 
     @if (data.hasValue()) {
       <table class="w-full bg-white rounded shadow text-sm">

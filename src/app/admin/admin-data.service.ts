@@ -42,6 +42,18 @@ export class AdminDataService {
     );
   }
 
+  /** Inserts a new row; the id and timestamps come from the column defaults. */
+  insert(table: AdminTable, row: Record<string, unknown>): Observable<void> {
+    return from(this.client.from(table as AdminTable).insert(row as never)).pipe(
+      map(({ error }) => {
+        if (error) {
+          console.error(error);
+          throw error;
+        }
+      }),
+    );
+  }
+
   update(table: AdminTable, id: string, patch: Record<string, unknown>): Observable<void> {
     return from(this.client.from(table as AdminTable).update(patch as never).eq('id', id)).pipe(
       map(({ error }) => {

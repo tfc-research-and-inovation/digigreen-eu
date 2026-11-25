@@ -11,7 +11,7 @@ const ARRAYS = ['tags'];
   selector: 'app-admin-project-edit',
   imports: [FormField, RouterLink],
   template: `
-    <h1 class="text-2xl font-semibold text-[#2D3436] mb-6">Edit project</h1>
+    <h1 class="text-2xl font-semibold text-[#2D3436] mb-6">{{ isNew ? 'New' : 'Edit' }} project</h1>
 
     <form (submit)="save($event)" class="bg-white rounded shadow p-6 space-y-4 max-w-3xl">
       <label class="block">
@@ -64,6 +64,9 @@ const ARRAYS = ['tags'];
         <input type="checkbox" [formField]="f.is_coordinator" /> <span>is_coordinator</span>
       </label>
 
+      @if (error()) {
+        <p class="text-sm text-red-600"><i class="fa-solid fa-circle-exclamation mr-1"></i>{{ error() }}</p>
+      }
       <div class="flex gap-3 pt-2">
         <button type="submit" class="px-4 py-2 rounded bg-[#2D3436] text-white hover:bg-[#7C9082]">
           <i class="fa-solid fa-floppy-disk mr-2"></i>Save
@@ -77,6 +80,9 @@ export class AdminProjectEdit {
   private readonly admin = inject(AdminDataService);
   private readonly router = inject(Router);
   private readonly id = inject(ActivatedRoute).snapshot.paramMap.get('id')!;
+  /** /admin/<section>/new creates a row instead of editing one. */
+  protected readonly isNew = this.id === 'new';
+  protected readonly error = signal('');
 
   protected readonly model = signal({
     name: '',
@@ -96,14 +102,18 @@ export class AdminProjectEdit {
   protected readonly f = form(this.model);
 
   constructor() {
+    if (this.isNew) return;
     this.admin.getById('projects', this.id).subscribe(row => this.model.set(toModel(row, this.model())));
   }
 
   save(event: Event) {
     event.preventDefault();
-    this.admin.update('projects', this.id, toPatch(this.model(), NULLABLE, ARRAYS)).subscribe({
+    this.error.set('');
+    const row = toPatch(this.model(), NULLABLE, ARRAYS);
+    const request = this.isNew ? this.admin.insert('projects', row) : this.admin.update('projects', this.id, row);
+    request.subscribe({
       next: () => this.router.navigate(['/admin/projects']),
-      error: () => {}, // already logged by AdminDataService; stay on the page
+      error: (e: { message: string }) => this.error.set(e.message), // stay on the page
     });
   }
 }

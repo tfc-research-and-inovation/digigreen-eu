@@ -10,7 +10,7 @@ const NULLABLE = ['description', 'publish_date', 'authors', 'work_package', 'del
   selector: 'app-admin-resource-edit',
   imports: [FormField, RouterLink],
   template: `
-    <h1 class="text-2xl font-semibold text-[#2D3436] mb-6">Edit resource</h1>
+    <h1 class="text-2xl font-semibold text-[#2D3436] mb-6">{{ isNew ? 'New' : 'Edit' }} resource</h1>
 
     <form (submit)="save($event)" class="bg-white rounded shadow p-6 space-y-4 max-w-3xl">
       <label class="block">
@@ -56,6 +56,9 @@ const NULLABLE = ['description', 'publish_date', 'authors', 'work_package', 'del
         <input type="checkbox" [formField]="f.hide_publish_day" /> <span>hide_publish_day</span>
       </label>
 
+      @if (error()) {
+        <p class="text-sm text-red-600"><i class="fa-solid fa-circle-exclamation mr-1"></i>{{ error() }}</p>
+      }
       <div class="flex gap-3 pt-2">
         <button type="submit" class="px-4 py-2 rounded bg-[#2D3436] text-white hover:bg-[#7C9082]">
           <i class="fa-solid fa-floppy-disk mr-2"></i>Save
@@ -69,6 +72,9 @@ export class AdminResourceEdit {
   private readonly admin = inject(AdminDataService);
   private readonly router = inject(Router);
   private readonly id = inject(ActivatedRoute).snapshot.paramMap.get('id')!;
+  /** /admin/<section>/new creates a row instead of editing one. */
+  protected readonly isNew = this.id === 'new';
+  protected readonly error = signal('');
 
   protected readonly model = signal({
     title: '',
@@ -86,14 +92,18 @@ export class AdminResourceEdit {
   protected readonly f = form(this.model);
 
   constructor() {
+    if (this.isNew) return;
     this.admin.getById('resources', this.id).subscribe(row => this.model.set(toModel(row, this.model())));
   }
 
   save(event: Event) {
     event.preventDefault();
-    this.admin.update('resources', this.id, toPatch(this.model(), NULLABLE)).subscribe({
+    this.error.set('');
+    const row = toPatch(this.model(), NULLABLE);
+    const request = this.isNew ? this.admin.insert('resources', row) : this.admin.update('resources', this.id, row);
+    request.subscribe({
       next: () => this.router.navigate(['/admin/resources']),
-      error: () => {}, // already logged by AdminDataService; stay on the page
+      error: (e: { message: string }) => this.error.set(e.message), // stay on the page
     });
   }
 }
