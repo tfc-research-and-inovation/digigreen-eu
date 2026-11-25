@@ -45,6 +45,7 @@ npm test -- --watch=false
 | `package.json` / `package-lock.json` | the two dependencies |
 | `angular.json` | `anyComponentStyle` budget 4/8 kB → 10/30 kB (Quill CSS is 24 kB) |
 | `src/app/admin/news/admin-news-edit.ts` | `<textarea [formField]="f.content">` → `<quill-editor>` with a limited toolbar; loads the Quill "snow" CSS |
+| `src/app/admin/news/legacy-html.ts` (+ spec) | converts legacy plain-text content (blank-line paragraphs) into `<p>` blocks before Quill loads it |
 | `docs/SPEC-news-wysiwyg.md` | this spec |
 
 No database, migration, service or public-page change. The `content` column is already

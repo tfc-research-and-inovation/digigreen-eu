@@ -5,6 +5,7 @@ import { QuillEditorFieldComponent } from 'ngx-quill';
 import type Quill from 'quill';
 import { AdminDataService } from '../admin-data.service';
 import { toModel, toPatch } from '../form-utils';
+import { legacyToHtml } from './legacy-html';
 
 const NULLABLE = ['content', 'image_url', 'image_alt'];
 const ARRAYS = ['tags'];
@@ -32,11 +33,11 @@ const ARRAYS = ['tags'];
         <quill-editor-field
           [formField]="f.content"
           format="html"
-          defaultEmptyValue=""
           [modules]="modules"
           [formats]="formats"
           [valueGetter]="getHtml"
-          class="mt-1 block"
+          [valueSetter]="setHtml"
+          class="mt-1 block w-full"
         />
       </div>
       <label class="block">
@@ -102,7 +103,12 @@ export class AdminNewsEdit {
   // Same list also applies to pasted text, so no other formatting gets in.
   protected readonly formats = ['header', 'bold', 'italic', 'list', 'link', 'blockquote'];
   // Quill 2's getSemanticHTML() turns every space into &nbsp;, which breaks line wrapping on the public page.
-  protected readonly getHtml = (quill: Quill) => quill.getSemanticHTML().replaceAll('&nbsp;', ' ');
+  // An empty editor returns '' so toPatch stores null (not '<p></p>').
+  protected readonly getHtml = (quill: Quill) =>
+    quill.getText().trim() ? quill.getSemanticHTML().replaceAll('&nbsp;', ' ') : '';
+  // Older content is plain text with blank-line paragraphs; convert it so Quill keeps the paragraphs.
+  protected readonly setHtml = (quill: Quill, value: unknown) =>
+    quill.clipboard.convert({ html: legacyToHtml(value as string | null) });
 
   constructor() {
     this.admin.getById('news', this.id).subscribe(row => this.model.set(toModel(row, this.model())));

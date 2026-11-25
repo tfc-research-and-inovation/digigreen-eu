@@ -29,7 +29,8 @@ ngx-quill, so that comes first (fail fast).
 - **Quill CSS only in the edit component** (`styleUrl` on `quill.snow.css`,
   `ViewEncapsulation.None`), not in global `angular.json` styles. This keeps it out of the public bundle.
 - **`<quill-editor-field>` with `[formField]`.** ngx-quill 30 ships a signal-forms control, so no `ngModel` fallback or wrapper is needed.
-- **`valueGetter` strips `&nbsp;`.** Quill 2's `getSemanticHTML()` turns every space into `&nbsp;`.
+- **`valueGetter` strips `&nbsp;`** (Quill 2's `getSemanticHTML()` turns every space into `&nbsp;`) and returns `''` for an empty editor.
+- **`valueSetter` runs `legacyToHtml()`.** Existing content is plain text with blank-line paragraphs. It is converted into `<p>` blocks before loading, and the database stays untouched until save. Chosen over a data migration.
 - **`anyComponentStyle` budget raised to 10 kB / 30 kB.** `quill.snow.css` is 24 kB. Approved by the user instead of loading it globally.
 
 ## Task List
@@ -42,11 +43,11 @@ ngx-quill, so that comes first (fail fast).
 - [x] Edit → Save writes HTML to `news.content` (checked in Studio)
 
 ### Phase 2: Regression
-- [ ] Task 2: Verify the round-trip on seed data, the empty → `null` case, and the public page (XS, 0–1 files)
+- [x] Task 2: Verify the round-trip on seed data, the empty → `null` case, and the public page (XS, 0–1 files)
 
 ### Checkpoint: Complete
-- [ ] All Success Criteria in the spec are met
-- [ ] `npm test -- --watch=false` passes 5/5
+- [x] All Success Criteria in the spec are met
+- [x] `npm test -- --watch=false` passes (9/9, including 4 new `legacyToHtml` tests)
 - [ ] Review with the user, who decides whether to commit
 
 ## Risks and Mitigations
