@@ -18,6 +18,9 @@ import { Supabase } from '../../services/supabase';
           <span class="text-sm text-gray-600">Password</span>
           <input type="password" [formField]="f.password" class="mt-1 w-full border rounded px-3 py-2" />
         </label>
+        @if (error()) {
+          <p class="text-sm text-red-600"><i class="fa-solid fa-circle-exclamation mr-1"></i>{{ error() }}</p>
+        }
         <button type="submit" class="w-full bg-[#2D3436] text-white rounded py-2 hover:bg-[#7C9082]">
           <i class="fa-solid fa-right-to-bracket mr-2"></i>Login
         </button>
@@ -31,12 +34,17 @@ export class AdminLogin {
 
   protected readonly model = signal({ email: '', password: '' });
   protected readonly f = form(this.model);
+  protected readonly error = signal('');
 
   async login(event: Event) {
     event.preventDefault();
+    this.error.set('');
     const { email, password } = this.model();
-    await this.supabase.login(email, password);
-    // Auth is not enforced yet: navigate even if login failed.
+    const { error } = await this.supabase.login(email, password);
+    if (error) {
+      this.error.set(error.message);
+      return;
+    }
     await this.router.navigate(['/admin']);
   }
 }
