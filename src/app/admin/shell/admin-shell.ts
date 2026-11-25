@@ -12,6 +12,7 @@ import { Supabase } from '../../services/supabase';
         <nav class="flex flex-col">
           @for (item of menu; track item.path) {
             <a [routerLink]="item.path" routerLinkActive="bg-[#7C9082]"
+               [routerLinkActiveOptions]="{ exact: item.path === '/admin' }"
                class="px-6 py-3 hover:bg-[#7C9082]/60">
               <i [class]="item.icon + ' w-5 mr-2'"></i>{{ item.label }}
             </a>
@@ -32,8 +33,9 @@ export class AdminShell {
   private readonly router = inject(Router);
 
   protected readonly menu = [
-    { label: 'Resources', path: '/admin/resources', icon: 'fa-solid fa-file-lines' },
+    { label: 'Dashboard', path: '/admin', icon: 'fa-solid fa-gauge' },
     { label: 'News', path: '/admin/news', icon: 'fa-solid fa-newspaper' },
+    { label: 'Resources', path: '/admin/resources', icon: 'fa-solid fa-file-lines' },
     { label: 'Projects', path: '/admin/projects', icon: 'fa-solid fa-diagram-project' },
   ];
 
