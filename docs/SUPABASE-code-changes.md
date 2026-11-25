@@ -118,8 +118,8 @@ grep -rn "'/data/" src
 
 ```bash
 npx supabase link --project-ref <project-ref>
-npx supabase db push                    # migrations
+npx supabase db push --remote          # migrations (χωρίς --remote πάει στο local stack)
 ```
 
-Τα δεδομένα του `seed.sql` **δεν** ανεβαίνουν με το `db push`. Για το πρώτο γέμισμα τρέχεις το
-`supabase/seed.sql` μία φορά από το Dashboard → SQL Editor, ή με `psql`.
+Τα δεδομένα του `seed.sql` **δεν** ανεβαίνουν με σκέτο `db push`. Για το πρώτο γέμισμα σε άδεια βάση
+πρόσθεσε `--include-seed`, ή τρέξε το `supabase/seed.sql` μία φορά από το Dashboard → SQL Editor.

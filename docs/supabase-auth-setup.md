@@ -27,10 +27,14 @@ Keep the password in a password manager. You give it to the content manager toge
 From the project root (logged in with `npx supabase login` and linked with
 `npx supabase link --project-ref <project-ref>`):
 ```bash
-npx supabase db push
+npx supabase db push --remote --dry-run        # preview, changes nothing
+npx supabase db push --remote --include-seed   # apply (seed only on the first push to an empty DB)
+npx supabase migration list --remote           # check: every row has a remote value
 ```
-This applies `<ts>_rename_sister_projects.sql` and `<ts>_admin_write_rls.sql`. Run it only after
-step 1.
+`--remote` is required: since Supabase CLI v3, `db push` targets the **local** stack by default.
+Without it, the command silently does nothing on the remote project.
+This applies every migration that is not yet on the remote project, including
+`<ts>_rename_sister_projects.sql` and `<ts>_admin_write_rls.sql`. Run it only after step 1.
 
 ### 5. Test
 1. `npm start` → open http://localhost:4200/admin/login.

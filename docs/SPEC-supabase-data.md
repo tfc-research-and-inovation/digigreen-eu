@@ -23,7 +23,7 @@ npx supabase init                                   # once: creates supabase/
 npx supabase start                                  # local stack (Docker Desktop)
 npx supabase db reset                               # apply migrations + seed.sql locally
 npx supabase gen types typescript --local > src/app/types/database.types.ts
-npx supabase db push                                # remote, ONLY after approval
+npx supabase db push --remote                       # remote, ONLY after approval
 ```
 
 ## Project Structure
